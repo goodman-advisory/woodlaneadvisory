@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What EU and US Sustainability Regulations Do Growing Fashion Brands Need to Prepare For? | Woodlane Advisory</title>
+    <meta name="description" content="A plain-language guide to CSRD, EUDR, the EU Green Transition Directive, ESPR, and the NY Fashion Act — what they require, who they affect, and what mid-market fashion brands should do now.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream: #F5F0E8;
+            --dark-olive: #2C3A2E;
+            --sage: #7A8F7E;
+            --gold: #B8956A;
+            --warm-white: #FDFBF7;
+            --text-primary: #2C3A2E;
+            --text-secondary: #5A6B5E;
+            --border-light: #E2DDD4;
+            --sage-light: #EEF2EF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Sans 3', 'Source Sans Pro', sans-serif;
+            color: var(--text-primary);
+            background-color: var(--warm-white);
+            line-height: 1.7;
+            font-size: 17px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── NAV ── */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 48px;
+            background: var(--warm-white);
+            border-bottom: 1px solid var(--border-light);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-logo {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--dark-olive);
+            text-decoration: none;
+            letter-spacing: 0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--dark-olive);
+        }
+
+        /* ── HERO ── */
+        .hero {
+            background: var(--cream);
+            padding: 80px 48px 72px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .hero-inner {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .hero-breadcrumb {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--sage);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 24px;
+        }
+
+        .hero-breadcrumb a {
+            color: var(--sage);
+            text-decoration: none;
+        }
+
+        .hero-breadcrumb a:hover {
+            color: var(--dark-olive);
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 1.25;
+            color: var(--dark-olive);
+            margin-bottom: 24px;
+        }
+
+        .hero-meta {
+            font-size: 14px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .hero-meta span {
+            margin-right: 16px;
+        }
+
+        /* ── ARTICLE ── */
+        .article-container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 56px 48px 80px;
+        }
+
+        .article-container p {
+            margin-bottom: 24px;
+            color: var(--text-primary);
+        }
+
+        .article-container h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 28px;
+            font-weight: 500;
+            color: var(--dark-olive);
+            margin-top: 56px;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .article-container h3 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--dark-olive);
+            margin-top: 40px;
+            margin-bottom: 12px;
+        }
+
+        .article-container strong {
+            font-weight: 600;
+            color: var(--dark-olive);
+        }
+
+        .article-container a {
+            color: var(--gold);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .article-container a:hover {
+            color: var(--dark-olive);
+        }
+
+        /* Key stat callout */
+        .callout {
+            background: var(--sage-light);
+            border-left: 3px solid var(--sage);
+            padding: 24px 28px;
+            margin: 32px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .callout p {
+            margin-bottom: 0;
+            font-size: 16px;
+            color: var(--text-primary);
+        }
+
+        .callout p + p {
+            margin-top: 12px;
+        }
+
+        /* Regulation summary cards */
+        .reg-card {
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            padding: 28px 32px;
+            margin: 28px 0;
+            background: var(--warm-white);
+        }
+
+        .reg-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .reg-card h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--dark-olive);
+        }
+
+        .reg-card .status {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            padding: 4px 10px;
+            border-radius: 3px;
+        }
+
+        .status-active {
+            background: #E8F0E9;
+            color: #3A6B3E;
+        }
+
+        .status-pending {
+            background: #FFF3E0;
+            color: #8B6914;
+        }
+
+        .status-stalled {
+            background: #F0ECEC;
+            color: #7A6B6B;
+        }
+
+        .reg-card p {
+            font-size: 15.5px;
+            margin-bottom: 12px;
+        }
+
+        .reg-card .reg-detail {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+
+        .reg-card .reg-detail strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* Table */
+        .timeline-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            font-size: 15px;
+        }
+
+        .timeline-table th {
+            font-weight: 600;
+            text-align: left;
+            padding: 12px 16px;
+            border-bottom: 2px solid var(--dark-olive);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+        }
+
+        .timeline-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-light);
+            vertical-align: top;
+        }
+
+        .timeline-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .year-highlight {
+            font-weight: 600;
+            color: var(--gold);
+        }
+
+        /* Intro paragraph */
+        .intro {
+            font-size: 19px;
+            line-height: 1.75;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+        }
+
+        /* CTA section */
+        .article-cta {
+            background: var(--cream);
+            border-radius: 6px;
+            padding: 40px 36px;
+            margin: 56px 0 0;
+            text-align: center;
+        }
+
+        .article-cta h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--dark-olive);
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .article-cta p {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--warm-white);
+            background: var(--dark-olive);
+            padding: 14px 32px;
+            border-radius: 4px;
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            transition: background 0.2s;
+        }
+
+        .cta-button:hover {
+            background: #3D4E3F;
+            color: var(--warm-white);
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            border-top: 1px solid var(--border-light);
+            padding: 40px 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark-olive);
+            text-decoration: none;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .footer-links a:hover {
+            color: var(--dark-olive);
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 768px) {
+            nav {
+                padding: 20px 24px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 56px 24px 48px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .article-container {
+                padding: 40px 24px 60px;
+            }
+
+            .article-container h2 {
+                font-size: 24px;
+            }
+
+            .reg-card {
+                padding: 20px 24px;
+            }
+
+            .timeline-table {
+                font-size: 14px;
+            }
+
+            .timeline-table th,
+            .timeline-table td {
+                padding: 10px 10px;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+                padding: 32px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="https://woodlaneadvisory.com" class="nav-logo">Woodlane Advisory</a>
+        <ul class="nav-links">
+            <li><a href="https://woodlaneadvisory.com/#services">Services</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="https://woodlaneadvisory.com/#about">About</a></li>
+            <li><a href="https://woodlaneadvisory.com/#contact">Get in Touch</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-breadcrumb">
+                <a href="https://woodlaneadvisory.com">Home</a> &nbsp;/&nbsp; <a href="/resources">Resources</a> &nbsp;/&nbsp; Regulations
+            </div>
+            <h1>What EU and US Sustainability Regulations Do Growing Fashion Brands Need to Prepare For?</h1>
+            <div class="hero-meta">
+                <span>Woodlane Advisory</span>
+                <span>Updated March 2026</span>
+                <span>12 min read</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARTICLE -->
+    <article class="article-container">
+
+        <p class="intro">
+            The regulatory landscape for fashion brands is changing faster than most companies realise. Over the next two years, a series of EU and US regulations will fundamentally reshape what brands are required to disclose, substantiate, and prove about their products and supply chains. This guide explains what is coming, who it affects, and what mid-market fashion brands should prioritise right now.
+        </p>
+
+        <p>
+            Most of this regulation originates in the European Union, but its reach is global. If your brand sells into the EU, sources from countries that trade with the EU, or works with European retail partners, these rules apply to you. The US regulatory picture is less advanced but gaining momentum, particularly at the state level.
+        </p>
+
+        <p>
+            The challenge for growing brands is that this information is scattered across law firm alerts, consultancy white papers, and EU policy documents written for compliance specialists. This page is designed to give brand founders, CEOs, and operations leaders a clear picture of what matters and what does not, without the jargon.
+        </p>
+
+        <!-- ═══════════════════════════════════════ -->
+        <h2>The Seven Regulations That Matter Most</h2>
+
+        <p>
+            There are dozens of sustainability-related regulations in various stages of development across Europe and the United States. Most of them will not affect a mid-market fashion brand in the next 24 months. Seven of them will.
+        </p>
+
+        <!-- CSRD -->
+        <div class="reg-card">
+            <div class="reg-card-header">
+                <h4>CSRD</h4>
+                <span class="status status-active">Active / Amended</span>
+            </div>
+            <p>
+                The Corporate Sustainability Reporting Directive is the EU's flagship sustainability disclosure law. It requires qualifying companies to publish detailed sustainability reports covering environmental, social, and governance impacts, using the European Sustainability Reporting Standards (ESRS).
+            </p>
+            <p>
+                The CSRD was substantially amended in early 2026 through the Omnibus I Simplification Package, which raised the qualifying thresholds and delayed reporting timelines. The scope has narrowed. But for brands above the thresholds, the requirements are serious: double materiality assessments, auditable data collection, value chain disclosures, and mandatory external assurance.
+            </p>
+            <p class="reg-detail"><strong>Who it affects:</strong> Companies with EU subsidiaries meeting revised size thresholds (the new employee threshold is expected to be 1,000+). Non-EU parent companies generating over &euro;150 million in EU revenue are also in scope, with first reporting now expected in 2029.</p>
+            <p class="reg-detail"><strong>Key deadline:</strong> Wave 1 companies (previously subject to NFRD) are already reporting. Large EU companies report on FY2025 data in 2026. Multinational companies with significant EU operations report on FY2027 data in 2028.</p>
+            <p class="reg-detail"><strong>Why it matters even if you're below the threshold:</strong> CSRD-reporting companies are required to collect sustainability data from their value chain. If a large EU retailer is your wholesale partner, they may start requesting supply chain data from you to meet their own reporting obligations. This is already happening.</p>
+        </div>
+
+        <!-- ECGT / Green Claims -->
+        <div class="reg-card">
+            <div class="reg-card-header">
+                <h4>EU Green Transition Directive (Anti-Greenwashing)</h4>
+                <span class="status status-active">Active / Enforcement Sept 2026</span>
+            </div>
+            <p>
+                This is the regulation most likely to directly affect mid-market fashion brands in 2026. The Empowering Consumers for the Green Transition Directive (ECGT) amends the EU's existing consumer protection rules to crack down on misleading environmental claims.
+            </p>
+            <p>
+                From September 2026, brands selling in the EU will be prohibited from making generic environmental claims like "eco-friendly," "sustainable," or "green" unless they can demonstrate recognised excellent environmental performance. Claims that a product is "climate neutral" or "carbon neutral" based on carbon offsetting are banned outright. Sustainability labels must be backed by approved certification schemes.
+            </p>
+            <p class="reg-detail"><strong>Who it affects:</strong> Any brand making environmental claims to EU consumers, regardless of where the brand is based. This includes website copy, product labels, hangtags, and marketing materials.</p>
+            <p class="reg-detail"><strong>Key deadline:</strong> EU member states must transpose the directive into national law by March 2026. Enforcement begins September 2026.</p>
+            <p class="reg-detail"><strong>Penalties:</strong> Fines of up to 4% of annual turnover in the affected member state. Authorities can also require corrective actions and public retractions.</p>
+            <p class="reg-detail"><strong>What about the Green Claims Directive?</strong> The EU's separate, more detailed Green Claims Directive was paused in mid-2025 after the European Commission announced its intention to withdraw the proposal. That directive would have required third-party pre-verification of all environmental claims. Its status remains unclear. However, the ECGT is already law and will be enforced regardless of what happens with the Green Claims Directive.</p>
+        </div>
+
+        <!-- EUDR -->
+        <div class="reg-card">
+            <div class="reg-card-header">
+                <h4>EUDR (EU Deforestation Regulation)</h4>
+                <span class="status status-active">Active / Enforcement Dec 2026</span>
+            </div>
+            <p>
+                The EUDR requires companies to prove that products sold in or exported from the EU are not linked to deforestation or forest degradation after 31 December 2020. It covers seven commodity categories: cattle (including leather), cocoa, coffee, palm oil, rubber, soy, and wood.
+            </p>
+            <p>
+                For fashion brands, the most immediate relevance is leather. Any brand placing leather products on the EU market will need to trace those materials back to their origin and demonstrate they are deforestation-free. This requires detailed supply chain documentation, geolocation data for production sites, and formal due diligence statements.
+            </p>
+            <p class="reg-detail"><strong>Who it affects:</strong> Any operator or trader placing covered commodities (or derived products like leather goods) on the EU market. This includes EU and non-EU companies.</p>
+            <p class="reg-detail"><strong>Key deadline:</strong> Large and medium companies must comply by 30 December 2026. Small and micro enterprises have until 30 June 2027.</p>
+            <p class="reg-detail"><strong>Penalties:</strong> Fines of up to 4% of annual EU turnover, confiscation of non-compliant products, and potential bans from public procurement.</p>
+            <p class="reg-detail"><strong>Note:</strong> Man-made cellulosic fibres like viscose (derived from wood pulp) are not explicitly in scope yet, but the regulation establishes the direction of travel. Brands sourcing these materials should be tracking their forest-of-origin data now.</p>
+        </div>
+
+        <!-- ESPR -->
+        <div class="reg-card">
+            <div class="reg-card-header">
+                <h4>ESPR (Ecodesign for Sustainable Products Regulation)</h4>
+                <span class="status status-active">Active / Phased Implementation</span>
+            </div>
+            <p>
+                The ESPR is a framework regulation that will eventually require Digital Product Passports for textiles and set minimum standards for product durability, repairability, and recyclability. The first concrete requirement for fashion brands takes effect on 19 July 2026: a ban on the destruction of unsold textiles and footwear for large enterprises.
+            </p>
+            <p class="reg-detail"><strong>Who it affects:</strong> Large enterprises selling textiles and footwear in the EU (from July 2026). Medium-sized companies follow by July 2030. Digital Product Passport requirements for textiles are still under development.</p>
+            <p class="reg-detail"><strong>Why it matters now:</strong> Brands that currently destroy unsold inventory need to develop alternative end-of-life strategies: resale, donation, recycling, or upcycling. The regulation also signals the EU's broader direction toward circular economy requirements for fashion.</p>
+        </div>
+
+        <!-- EU Textile EPR -->
+        <div class="reg-card">
+            <div class="reg-card-header">
+                <h4>EU Textile EPR (Extended Producer Responsibility)</h4>
+                <span class="status status-active">Active / Transposition by Mid-2028</span>
+            </div>
+            <p>
+                The revised EU Waste Framework Directive, which entered into force in October 2025, requires all EU member states to establish Extended Producer Responsibility schemes for textiles and footwear within 30 months. Under EPR, producers (brands, manufacturers, importers, and retailers who first place a textile product on the EU market) are financially responsible for the collection, sorting, reuse, and recycling of their products at end of life.
+            </p>
+            <p>
+                France has operated textile EPR since 2007. The Netherlands launched its scheme in 2023. The rest of the EU must follow by mid-2028. EPR fees will be eco-modulated, meaning brands that design more durable, repairable, and recyclable products pay lower fees, while brands producing hard-to-recycle blended materials or fast fashion volumes pay more.
+            </p>
+            <p class="reg-detail"><strong>Who it affects:</strong> Any producer placing textile products on the EU market, including non-EU brands selling into the EU and e-commerce sellers. Micro-enterprises get an extra year to comply.</p>
+            <p class="reg-detail"><strong>Key deadline:</strong> Member states must establish EPR schemes by approximately April 2028 (30 months from the directive's entry into force in October 2025). France and the Netherlands are already operational. Several other member states, including Italy and Spain, are expected to launch schemes in 2026 or 2027.</p>
+            <p class="reg-detail"><strong>Why it matters now:</strong> The eco-modulated fee structure means your product design decisions today will determine your EPR costs tomorrow. Brands using mono-materials, designing for durability, and avoiding problematic chemicals (particularly PFAS) will pay less. Mixed-fibre blends and materials that contaminate recycling streams will carry premium fees.</p>
+        </div>
+
+        <!-- NY Fashion Act -->
+        <div class="reg-card">
+            <div class="reg-card-header">
+                <h4>NY Fashion Act</h4>
+                <span class="status status-pending">Pending</span>
+            </div>
+            <p>
+                The most significant fashion-specific legislation in the United States. The Fashion Environmental Accountability Act (A4631B) would require fashion sellers doing business in New York with over $100 million in annual revenue to conduct environmental due diligence across their supply chains, set science-based emissions targets, and improve chemical management and labour practices. Violations would be enforced by the state Attorney General with fines of up to 2% of annual revenue.
+            </p>
+            <p class="reg-detail"><strong>Current status:</strong> The bill was referred to the Assembly Consumer Affairs and Protection Committee in January 2026. Similar bills in Washington have stalled. Massachusetts has a bill under study order. New York's remains the most viable, though passage is not certain.</p>
+            <p class="reg-detail"><strong>Why it matters even if it doesn't pass:</strong> The NY Fashion Act has become a reference point for industry expectations. Major retailers and investors are already using its framework as a benchmark for what responsible fashion supply chain management looks like. Preparing for it prepares you for the direction of US regulation more broadly.</p>
+        </div>
+
+        <!-- California SB 707 -->
+        <div class="reg-card">
+            <div class="reg-card-header">
+                <h4>California SB 707 (Textile EPR)</h4>
+                <span class="status status-active">Active / PRO Membership July 2026</span>
+            </div>
+            <p>
+                California's Responsible Textile Recovery Act, signed into law in September 2024, is the first Extended Producer Responsibility law for textiles in the United States. It requires producers of apparel and textile products sold in California to join a state-approved Producer Responsibility Organisation (PRO) and ultimately fund the collection, sorting, repair, reuse, and recycling of textile waste statewide.
+            </p>
+            <p>
+                CalRecycle approved Landbell USA as the PRO in February 2026. All qualifying producers must join by July 1, 2026. The PRO will develop a stewardship plan covering collection infrastructure, recycling targets, and consumer education. Like the EU model, fees will be eco-modulated: brands with more sustainable product designs and existing take-back programmes will pay less.
+            </p>
+            <p class="reg-detail"><strong>Who it affects:</strong> Any producer selling apparel or textile products in California with more than $1 million in annual global turnover. "Producer" is defined broadly: brand owners, manufacturers, importers, and (as a fallback) retailers or distributors. Secondhand-only sellers are exempt.</p>
+            <p class="reg-detail"><strong>Key deadline:</strong> All qualifying producers must join the approved PRO by 1 July 2026. Full stewardship plan implementation is required by July 2030 or when CalRecycle approves the plan, whichever comes first.</p>
+            <p class="reg-detail"><strong>Penalties:</strong> Up to $10,000 per day for non-compliance, or $50,000 per day for intentional violations. Non-compliant producers can be effectively barred from selling in California.</p>
+            <p class="reg-detail"><strong>Why it matters beyond California:</strong> SB 707 is expected to set the template for textile EPR across the US, just as California's packaging EPR laws have influenced other states. New York has already introduced a similar textile EPR bill (S3217). Brands that build compliance infrastructure now will be ahead when other states follow.</p>
+        </div>
+
+        <!-- ═══════════════════════════════════════ -->
+        <h2>The Timeline at a Glance</h2>
+
+        <table class="timeline-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Regulation</th>
+                    <th>What Happens</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="year-highlight">Jul 2026</td>
+                    <td>CA SB 707</td>
+                    <td>All qualifying producers must join the approved PRO (Landbell USA) for California textile EPR</td>
+                </tr>
+                <tr>
+                    <td class="year-highlight">Jul 2026</td>
+                    <td>ESPR</td>
+                    <td>Large enterprises prohibited from destroying unsold textiles and footwear in the EU</td>
+                </tr>
+                <tr>
+                    <td class="year-highlight">Sept 2026</td>
+                    <td>ECGT</td>
+                    <td>Ban on generic green claims and offset-based "climate neutral" product claims takes effect across the EU</td>
+                </tr>
+                <tr>
+                    <td class="year-highlight">Dec 2026</td>
+                    <td>EUDR</td>
+                    <td>Large and medium companies must demonstrate deforestation-free supply chains for leather and other covered commodities</td>
+                </tr>
+                <tr>
+                    <td>2027</td>
+                    <td>EUDR</td>
+                    <td>Small and micro enterprises must comply with deforestation-free requirements</td>
+                </tr>
+                <tr>
+                    <td>2028</td>
+                    <td>CSRD</td>
+                    <td>Large multinational companies report on FY2027 sustainability data under simplified ESRS</td>
+                </tr>
+                <tr>
+                    <td>~2028</td>
+                    <td>EU Textile EPR</td>
+                    <td>All EU member states must have textile EPR schemes operational; eco-modulated producer fees begin</td>
+                </tr>
+                <tr>
+                    <td>2029</td>
+                    <td>CSRD</td>
+                    <td>Non-EU companies with &euro;150M+ EU revenue submit first sustainability reports</td>
+                </tr>
+                <tr>
+                    <td>2030</td>
+                    <td>CA SB 707</td>
+                    <td>Full stewardship plan implementation; collection infrastructure, recycling targets, and eco-modulated fees operational</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- ═══════════════════════════════════════ -->
+        <h2>What This Means for Mid-Market Fashion Brands</h2>
+
+        <p>
+            If you are a fashion brand doing between $5 million and $200 million in revenue, you are likely in a specific position: large enough to be affected by these regulations (either directly or through your wholesale partners and supply chain), but too small to have a dedicated compliance team.
+        </p>
+
+        <p>
+            The good news is that you do not need to address all of these regulations at once. The bad news is that waiting until enforcement begins is too late. The data collection, supply chain mapping, and internal processes required to comply with any of these regulations take 12 to 18 months to build properly.
+        </p>
+
+        <h3>The three things every growing fashion brand should be doing right now</h3>
+
+        <p>
+            <strong>First, audit your environmental claims.</strong> This is the most urgent action for 2026. Review every piece of marketing copy, every product label, every hangtag, and every social media post that references sustainability, the environment, or climate. If you cannot substantiate a claim with specific, verifiable data, revise it or remove it before September 2026. Pay particular attention to any use of "sustainable," "eco-friendly," "carbon neutral," or "climate positive." These terms are now regulated in the EU.
+        </p>
+
+        <p>
+            <strong>Second, start mapping your supply chain.</strong> You need to know, at a minimum, who your Tier 1 (finished goods) and Tier 2 (fabric and components) suppliers are, where they are located, and what materials they use. If you use leather, you will need traceability to the origin of the raw material. If you work with EU wholesale partners, they will increasingly need this data from you for their own CSRD reporting. Begin collecting it now rather than scrambling to produce it when a partner or regulator requests it.
+        </p>
+
+        <p>
+            <strong>Third, develop an inventory management strategy for unsold products.</strong> If you sell in the EU, the destruction of unsold textiles will be banned for large companies from July 2026. Even if your company falls below the size threshold, retailers and wholesale partners may begin requiring documentation of your end-of-life practices. Resale, donation, and recycling partnerships should be established before they are mandated.
+        </p>
+
+        <div class="callout">
+            <p>
+                <strong>A note on proportionality:</strong> None of these regulations expect a $20 million brand to have the same reporting infrastructure as a $5 billion one. What they do expect is evidence of genuine effort: documented policies, traceable supply chains, and substantiated claims. The bar is not perfection. The bar is not making things up.
+            </p>
+        </div>
+
+        <!-- ═══════════════════════════════════════ -->
+        <h2>What About the US?</h2>
+
+        <p>
+            The US regulatory picture for fashion is less comprehensive than the EU's, but it is no longer accurate to say there is no US regulation. California's SB 707, signed into law in 2024, creates the first mandatory textile EPR programme in the country. Producers selling apparel in California with more than $1 million in global revenue must join the state-approved PRO by July 2026. This is not a proposal. It is law, with enforcement mechanisms and penalties.
+        </p>
+
+        <p>
+            Beyond SB 707, the state-level legislative picture is mixed. New York's Fashion Environmental Accountability Act remains the most ambitious fashion-specific due diligence bill in the US, though it has not yet passed. Similar bills in Washington stalled in early 2026. Massachusetts has a bill under study order. New York also introduced its own textile EPR bill (S3217) in January 2025, which would create a framework similar to California's.
+        </p>
+
+        <p>
+            At the federal level, there is no US equivalent of the CSRD, no federal ban on greenwashing claims, and no mandatory supply chain due diligence law for fashion. The SEC's climate disclosure rules have been scaled back and do not specifically target the industry.
+        </p>
+
+        <p>
+            For US brands, regulatory pressure comes from three directions. First, California's SB 707, which is now a concrete compliance obligation. Second, the EU, whose regulations effectively apply to any brand selling to European customers, sourcing from global supply chains, or partnering with EU-based retailers. Third, the Federal Trade Commission's Green Guides, which govern environmental marketing claims in the US. The FTC has been enforcing these more actively and is expected to update them. Brands making sustainability claims in US marketing should ensure those claims are specific, truthful, and supported by evidence.
+        </p>
+
+        <!-- ═══════════════════════════════════════ -->
+        <h2>The Business Case for Acting Now</h2>
+
+        <p>
+            Regulatory compliance is a cost of doing business. But the brands that move early tend to capture value that goes beyond compliance.
+        </p>
+
+        <p>
+            <strong>Revenue protection.</strong> Retail partners including Nordstrom, Net-a-Porter, Selfridges, and Galeries Lafayette are tightening their sustainability requirements for brand partners. Meeting those requirements protects existing revenue. Failing to meet them puts wholesale relationships at risk.
+        </p>
+
+        <p>
+            <strong>Margin improvement.</strong> The supply chain mapping required for regulatory compliance frequently reveals operational inefficiencies: redundant suppliers, excess material waste, costly logistics routes. Brands that invest in visibility often find cost savings that offset the investment.
+        </p>
+
+        <p>
+            <strong>Investor readiness.</strong> Private equity firms and strategic acquirers are increasingly evaluating ESG risk as part of their due diligence. A brand with documented sustainability practices, substantiated claims, and traceable supply chains is a lower-risk investment. That translates directly into valuation.
+        </p>
+
+        <p>
+            <strong>Regulatory cost avoidance.</strong> Retrofitting compliance under deadline pressure is significantly more expensive than building it incrementally. Brands that begin now spread the cost over time and avoid the premium that comes with urgency.
+        </p>
+
+        <!-- CTA -->
+        <div class="article-cta">
+            <h3>Not sure where your brand stands?</h3>
+            <p>
+                Woodlane Advisory helps fashion brands assess their regulatory exposure, audit their sustainability claims, and build practical roadmaps. Start with a conversation.
+            </p>
+            <a href="mailto:julia@woodlaneadvisory.com" class="cta-button">Book a Call</a>
+        </div>
+
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="https://woodlaneadvisory.com" class="footer-logo">Woodlane Advisory</a>
+        <ul class="footer-links">
+            <li><a href="https://woodlaneadvisory.com/#services">Services</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="https://woodlaneadvisory.com/#about">About</a></li>
+            <li><a href="https://www.linkedin.com/company/woodlane-advisory" target="_blank">LinkedIn</a></li>
+        </ul>
+        <span>&copy; 2026 woodlaneadvisory.com</span>
+    </footer>
+
+</body>
+</html>
