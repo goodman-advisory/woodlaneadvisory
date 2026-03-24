@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Are the Biggest Supply Chain Sustainability Risks for Mid-Market Fashion Brands? | Woodlane Advisory</title>
+    <meta name="description" content="The supply chain risks that mid-market fashion brands need to understand now: Scope 3 emissions, traceability gaps, materials exposure, labour practices, and the regulatory pressure that is making all of this urgent.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream: #F5F0E8;
+            --dark-olive: #2C3A2E;
+            --sage: #7A8F7E;
+            --gold: #B8956A;
+            --warm-white: #FDFBF7;
+            --text-primary: #2C3A2E;
+            --text-secondary: #5A6B5E;
+            --border-light: #E2DDD4;
+            --sage-light: #EEF2EF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Source Sans 3', 'Source Sans Pro', sans-serif;
+            color: var(--text-primary);
+            background-color: var(--warm-white);
+            line-height: 1.7;
+            font-size: 17px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 24px 48px; background: var(--warm-white); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 100; }
+        .nav-logo { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 600; color: var(--dark-olive); text-decoration: none; letter-spacing: 0.02em; }
+        .nav-links { display: flex; gap: 32px; list-style: none; }
+        .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-secondary); text-decoration: none; letter-spacing: 0.03em; text-transform: uppercase; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--dark-olive); }
+
+        .hero { background: var(--cream); padding: 80px 48px 72px; border-bottom: 1px solid var(--border-light); }
+        .hero-inner { max-width: 780px; margin: 0 auto; }
+        .hero-breadcrumb { font-size: 13px; font-weight: 500; color: var(--sage); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 24px; }
+        .hero-breadcrumb a { color: var(--sage); text-decoration: none; }
+        .hero-breadcrumb a:hover { color: var(--dark-olive); }
+        .hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 40px; font-weight: 500; line-height: 1.25; color: var(--dark-olive); margin-bottom: 24px; }
+        .hero-meta { font-size: 14px; color: var(--text-secondary); font-weight: 400; }
+        .hero-meta span { margin-right: 16px; }
+
+        .article-container { max-width: 780px; margin: 0 auto; padding: 56px 48px 80px; }
+        .article-container p { margin-bottom: 24px; color: var(--text-primary); }
+        .article-container h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 500; color: var(--dark-olive); margin-top: 56px; margin-bottom: 20px; line-height: 1.3; }
+        .article-container h3 { font-family: 'Source Sans 3', sans-serif; font-size: 20px; font-weight: 600; color: var(--dark-olive); margin-top: 40px; margin-bottom: 12px; }
+        .article-container strong { font-weight: 600; color: var(--dark-olive); }
+        .article-container a { color: var(--gold); text-decoration: underline; text-underline-offset: 2px; }
+        .article-container a:hover { color: var(--dark-olive); }
+        .intro { font-size: 19px; line-height: 1.75; color: var(--text-secondary); margin-bottom: 32px; }
+
+        .callout { background: var(--sage-light); border-left: 3px solid var(--sage); padding: 24px 28px; margin: 32px 0; border-radius: 0 4px 4px 0; }
+        .callout p { margin-bottom: 0; font-size: 16px; color: var(--text-primary); }
+        .callout p + p { margin-top: 12px; }
+
+        .risk-card { border: 1px solid var(--border-light); border-radius: 6px; padding: 28px 32px; margin: 28px 0; background: var(--warm-white); }
+        .risk-card h4 { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 600; color: var(--dark-olive); margin-bottom: 12px; }
+        .risk-card p { font-size: 16px; margin-bottom: 12px; }
+        .risk-card .risk-detail { font-size: 14.5px; color: var(--text-secondary); margin-bottom: 8px; }
+        .risk-card .risk-detail strong { color: var(--text-primary); font-weight: 600; }
+
+        .tier-label { display: inline-block; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; padding: 4px 10px; border-radius: 3px; margin-bottom: 8px; }
+        .tier-1 { background: #E8F0E9; color: #3A6B3E; }
+        .tier-2 { background: #FFF3E0; color: #8B6914; }
+        .tier-3 { background: #F0ECEC; color: #7A6B6B; }
+        .tier-4 { background: #EDE8F0; color: #5E4B6B; }
+
+        .article-cta { background: var(--cream); border-radius: 6px; padding: 40px 36px; margin: 56px 0 0; text-align: center; }
+        .article-cta h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 500; color: var(--dark-olive); margin-top: 0; margin-bottom: 12px; }
+        .article-cta p { font-size: 16px; color: var(--text-secondary); margin-bottom: 24px; max-width: 520px; margin-left: auto; margin-right: auto; }
+        .cta-button { display: inline-block; font-family: 'Source Sans 3', sans-serif; font-size: 15px; font-weight: 600; color: var(--warm-white); background: var(--dark-olive); padding: 14px 32px; border-radius: 4px; text-decoration: none; letter-spacing: 0.02em; transition: background 0.2s; }
+        .cta-button:hover { background: #3D4E3F; color: var(--warm-white); }
+
+        footer { border-top: 1px solid var(--border-light); padding: 40px 48px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: var(--text-secondary); }
+        .footer-logo { font-family: 'Playfair Display', Georgia, serif; font-size: 16px; font-weight: 600; color: var(--dark-olive); text-decoration: none; }
+        .footer-links { display: flex; gap: 24px; list-style: none; }
+        .footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 13px; }
+        .footer-links a:hover { color: var(--dark-olive); }
+
+        @media (max-width: 768px) {
+            nav { padding: 20px 24px; }
+            .nav-links { display: none; }
+            .hero { padding: 56px 24px 48px; }
+            .hero h1 { font-size: 30px; }
+            .article-container { padding: 40px 24px 60px; }
+            .article-container h2 { font-size: 24px; }
+            .risk-card { padding: 20px 24px; }
+            footer { flex-direction: column; gap: 16px; text-align: center; padding: 32px 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="https://woodlaneadvisory.com" class="nav-logo">Woodlane Advisory</a>
+        <ul class="nav-links">
+            <li><a href="https://woodlaneadvisory.com/#services">Services</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="https://woodlaneadvisory.com/#about">About</a></li>
+            <li><a href="https://woodlaneadvisory.com/#contact">Get in Touch</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-breadcrumb">
+                <a href="https://woodlaneadvisory.com">Home</a> &nbsp;/&nbsp; <a href="/resources">Resources</a> &nbsp;/&nbsp; Supply Chain
+            </div>
+            <h1>What Are the Biggest Supply Chain Sustainability Risks for Mid-Market Fashion Brands?</h1>
+            <div class="hero-meta">
+                <span>Woodlane Advisory</span>
+                <span>Updated March 2026</span>
+                <span>15 min read</span>
+            </div>
+        </div>
+    </section>
+
+    <article class="article-container">
+
+        <p class="intro">
+            For most fashion brands, over 90% of their environmental footprint sits outside their direct operations, deep inside a supply chain they often cannot fully see. Scope 3 emissions (the emissions from your suppliers, raw materials, logistics, and product end-of-life) make up between 90% and 99% of a typical fashion brand's total carbon footprint. The risks embedded in that supply chain are not abstract. They are commercial: lost wholesale accounts, regulatory penalties, investor concerns, and reputational damage that can take years to repair.
+        </p>
+
+        <p>
+            This guide maps the five biggest supply chain sustainability risks for mid-market fashion brands and explains what you can do about each one, starting with the actions that have the highest return for the least investment.
+        </p>
+
+        <!-- ═══════════════════════════════════════ -->
+        <h2>First: Understanding Your Supply Chain Tiers</h2>
+
+        <p>
+            Before getting into the risks, it helps to understand how a fashion supply chain is structured. The industry uses a tiered system:
+        </p>
+
+        <p>
+            <span class="tier-label tier-1">Tier 1</span> <strong>Cut, make, and trim (CMT) factories.</strong> These are the facilities that assemble your finished garments. Most brands know their Tier 1 suppliers. This is the part of the supply chain you probably have the most visibility into and the most direct relationships with.
+        </p>
+
+        <p>
+            <span class="tier-label tier-2">Tier 2</span> <strong>Fabric mills, dye houses, and component suppliers.</strong> These are the facilities that produce the fabrics, buttons, zippers, and trims that go into your products. Many brands know some of their Tier 2 suppliers, but visibility is often incomplete. A McKinsey analysis of data from over 9,000 suppliers published in March 2025 found that Tier 2 processes account for 45% to 70% of a fashion brand's Scope 3 emissions, making this the single largest emissions hotspot in the value chain.
+        </p>
+
+        <p>
+            <span class="tier-label tier-3">Tier 3</span> <strong>Yarn spinners and fibre processors.</strong> These facilities take raw materials and process them into usable yarn and thread. Visibility at this level is limited for most mid-market brands.
+        </p>
+
+        <p>
+            <span class="tier-label tier-4">Tier 4</span> <strong>Raw material producers.</strong> Cotton farms, leather tanneries, wool producers, synthetic fibre manufacturers, and forests supplying cellulosic fibres. This is where the material originates. Very few mid-market brands have visibility at this level, but it is where many of the most significant environmental and social risks begin.
+        </p>
+
+        <div class="callout">
+            <p>
+                <strong>The visibility gap is the risk.</strong> Most mid-market brands have reasonable visibility into Tier 1. Partial visibility into Tier 2. And little to no visibility into Tier 3 and Tier 4. The problem is that the majority of environmental impact, regulatory exposure, and reputational risk sits in the tiers you cannot see.
+            </p>
+        </div>
+
+        <!-- ═══════════════════════════════════════ -->
+        <h2>The Five Biggest Risks</h2>
+
+        <!-- Risk 1 -->
+        <div class="risk-card">
+            <h4>1. Carbon Emissions You Cannot Measure (and Increasingly Cannot Ignore)</h4>
+            <p>
+                The Fashion Industry Charter for Climate Action estimates that Scope 3 emissions represent approximately 99% of a fashion company's total carbon footprint, with just 1% coming from direct operations. For brands and retailers specifically, the purchased goods and services category (Scope 3, Category 1) alone typically accounts for over 80% of total emissions. These are the emissions embedded in your fabrics, your dyeing processes, your logistics, and the energy consumed across your supplier base.
+            </p>
+            <p>
+                The challenge is measurement. Most mid-market brands do not have supplier-specific emissions data. They rely on spend-based estimates or industry averages, which are better than nothing but not accurate enough to set meaningful reduction targets or satisfy the level of reporting that regulators and retail partners are beginning to require.
+            </p>
+            <p class="risk-detail"><strong>Why it matters commercially:</strong> CSRD-reporting companies are required to disclose Scope 3 emissions across their value chain. If your wholesale partners report under CSRD, they will need emissions data from you. Brands that cannot provide it risk losing shelf space to competitors who can. Science-based targets (SBTi) also require Scope 3 measurement, and an increasing number of investors expect to see them.</p>
+            <p class="risk-detail"><strong>Where to start:</strong> Begin with a spend-based estimate of your Scope 3 footprint. This uses your purchasing data and industry emissions factors to produce a directional estimate. It is not perfect, but it tells you where your biggest hotspots are. Then prioritise collecting activity-based data from your largest Tier 1 and Tier 2 suppliers. Even data from your top 10 suppliers will give you a significantly more accurate picture than estimates alone.</p>
+        </div>
+
+        <!-- Risk 2 -->
+        <div class="risk-card">
+            <h4>2. Traceability Gaps That Create Regulatory and Reputational Exposure</h4>
+            <p>
+                Traceability means knowing exactly where your materials come from, who processed them, and under what conditions, at every stage from raw material to finished product. Most mid-market brands have significant gaps in this chain.
+            </p>
+            <p>
+                The regulatory pressure is coming from multiple directions simultaneously. The EUDR requires deforestation-free proof for leather products, including geolocation data for the land where cattle were raised. CSRD requires value chain disclosures. The NY Fashion Act, if passed, would require supply chain mapping and due diligence. California's SB 707 requires brands to understand and ultimately take responsibility for the end-of-life management of their products, which starts with knowing what is in them.
+            </p>
+            <p class="risk-detail"><strong>Why it matters commercially:</strong> The Uyghur Forced Labor Prevention Act (UFLPA) in the US creates a rebuttable presumption that goods produced in China's Xinjiang region are made with forced labour. US Customs and Border Protection has detained shipments from fashion brands that could not demonstrate their cotton supply chain was free from Xinjiang-origin inputs. Without traceability to the raw material level, brands selling into the US market are exposed to seizure of goods at the border.</p>
+            <p class="risk-detail"><strong>Where to start:</strong> Map your Tier 1 suppliers completely: name, location, parent company, products they make for you. Then work backward to Tier 2 (fabric mills and dye houses). Ask your Tier 1 suppliers to identify their key Tier 2 partners. You do not need expensive traceability software to start. A well-structured spreadsheet and a systematic approach to supplier engagement will take you further than most brands have gone.</p>
+        </div>
+
+        <!-- Risk 3 -->
+        <div class="risk-card">
+            <h4>3. Materials Risk: What Your Products Are Made Of</h4>
+            <p>
+                The materials a brand uses are the foundation of its environmental footprint. Conventional cotton requires significant water and pesticide inputs. Conventional polyester is derived from fossil fuels. Viscose and other man-made cellulosic fibres (MMCFs) can drive deforestation if sourced irresponsibly. Leather carries deforestation risk, chemical processing concerns, and animal welfare implications. Even "preferred" materials like organic cotton and recycled polyester have limitations and trade-offs.
+            </p>
+            <p>
+                Materials risk is also regulatory risk. The EUDR directly affects leather. EU EPR schemes will apply eco-modulated fees based on material composition, meaning brands using hard-to-recycle blended fabrics (such as polyester-cotton-elastane mixes) will pay higher fees than those using mono-materials. The EU's Ecodesign for Sustainable Products Regulation will eventually set minimum durability and recyclability standards for textiles.
+            </p>
+            <p class="risk-detail"><strong>Why it matters commercially:</strong> Material choices directly affect your margin structure under upcoming EPR fee regimes. They also affect your ability to make credible sustainability claims and respond to retail partner questionnaires about material sourcing. Brands that understand their material portfolio can optimise for both cost and compliance. Brands that do not will face rising costs with no strategic framework for managing them.</p>
+            <p class="risk-detail"><strong>Where to start:</strong> Build a material inventory: what materials you use, in what quantities, from which suppliers, and with what certifications. Identify your top five materials by volume. For each one, understand the key environmental risks (water, carbon, chemicals, land use) and whether you have certifications or documentation to substantiate any claims you make about them.</p>
+        </div>
+
+        <!-- Risk 4 -->
+        <div class="risk-card">
+            <h4>4. Chemical Management Across Your Supply Chain</h4>
+            <p>
+                Textile production is a chemically intensive process. Dyeing, finishing, printing, and waterproofing all involve chemicals that can be harmful to workers, communities, and ecosystems if not managed properly. Per- and polyfluoroalkyl substances (PFAS), commonly used for water and stain resistance, are under increasing regulatory scrutiny globally. Formaldehyde, certain azo dyes, and heavy metals in finishes are restricted in many markets.
+            </p>
+            <p>
+                Chemical management risk sits primarily at Tier 2 (dye houses and finishing plants) and is one of the hardest areas for brands to monitor. It requires either certified supply chains (such as OEKO-TEX or bluesign) or direct testing and auditing of wet processing facilities.
+            </p>
+            <p class="risk-detail"><strong>Why it matters commercially:</strong> California's SB 707 specifically requires the PRO plan to address PFAS and other chemicals that contaminate the recycling stream. Products containing PFAS will likely face the highest tier of eco-modulated fees. The EU's REACH regulation already restricts hundreds of chemicals in textile products sold in Europe, and compliance is enforced through market surveillance and product testing. Brands that cannot demonstrate chemical compliance risk product recalls, market access restrictions, and premium EPR fees.</p>
+            <p class="risk-detail"><strong>Where to start:</strong> Require all suppliers to sign a Restricted Substances List (RSL) as a condition of doing business. The AFIRM Group publishes an industry-standard RSL that is regularly updated and freely available. If you are not already requiring RSL compliance, start there. For higher-risk product categories (outerwear, activewear, children's clothing), consider requiring OEKO-TEX Standard 100 certification or equivalent testing.</p>
+        </div>
+
+        <!-- Risk 5 -->
+        <div class="risk-card">
+            <h4>5. Labour Practices and Human Rights Due Diligence</h4>
+            <p>
+                Labour risk in fashion supply chains ranges from wage theft and excessive overtime at Tier 1 factories to forced labour and child labour at raw material level. The Rana Plaza disaster in 2013 brought global attention to garment factory safety. Since then, regulatory requirements around labour due diligence have expanded significantly, but the underlying risks have not disappeared.
+            </p>
+            <p>
+                The EU's Corporate Sustainability Due Diligence Directive (CS3D), while recently amended through Omnibus I to soften some requirements, still requires qualifying companies to identify, prevent, and mitigate adverse human rights and environmental impacts across their value chains. The NY Fashion Act would require fashion sellers to report on wages relative to living wages, unionisation rates, and overtime practices. Even where these laws have not yet passed, the expectations they represent are increasingly embedded in retail partner requirements and investor due diligence.
+            </p>
+            <p class="risk-detail"><strong>Why it matters commercially:</strong> Labour violations in your supply chain can result in shipment seizures (under UFLPA), loss of retail partnerships, consumer boycotts, and lasting brand damage. The reputational cost of a labour scandal is disproportionate to the cost of basic due diligence. For brands considering PE investment or acquisition, labour risk is a standard part of ESG due diligence.</p>
+            <p class="risk-detail"><strong>Where to start:</strong> Establish a supplier code of conduct that covers wages, working hours, freedom of association, child labour, and forced labour. Require all Tier 1 suppliers to acknowledge it in writing. For higher-risk sourcing countries, require third-party social audits (SMETA, BSCI, or SA8000). Build relationships with your Tier 1 suppliers that go beyond audit compliance; regular site visits and open dialogue are more effective at identifying problems than annual audits alone.</p>
+        </div>
+
+        <!-- ═══════════════════════════════════════ -->
+        <h2>Where Tier 2 Sits at the Centre of Everything</h2>
+
+        <p>
+            If there is one takeaway from this analysis, it is this: Tier 2 is where most of the risk concentrates.
+        </p>
+
+        <p>
+            Tier 2 facilities (fabric mills, dye houses, and finishing plants) account for 45% to 70% of supply chain emissions, according to McKinsey's 2025 analysis. They are where the most energy-intensive processes happen: dyeing, finishing, drying, all powered by boilers that in many regions still run on coal. Coal makes up 40% of energy use at Tier 2, compared with 31% across the industry overall. Tier 2 is also where the most significant chemical processes occur and where water pollution risk is highest.
+        </p>
+
+        <p>
+            Yet most mid-market brands have only partial visibility into their Tier 2 suppliers. The brand contracts with a Tier 1 factory, which in turn contracts with fabric mills and dye houses. The brand may know the names of some Tier 2 suppliers but often does not have direct relationships, audit data, or emissions information from them.
+        </p>
+
+        <p>
+            Closing this gap does not require massive investment. It starts with asking your Tier 1 suppliers a simple question: which Tier 2 facilities are processing my orders? Many Tier 1 suppliers will share this information if asked directly. From there, you can begin collecting basic data: facility name, location, certifications, and energy sources. This alone puts you ahead of most brands your size.
+        </p>
+
+        <!-- ═══════════════════════════════════════ -->
+        <h2>The Cost of Inaction vs. the Cost of Action</h2>
+
+        <p>
+            The most common objection to supply chain sustainability work is cost. It is true that mapping your supply chain, collecting data, and building supplier relationships requires investment, both financial and in staff time. But the cost of not doing it is higher and rising.
+        </p>
+
+        <p>
+            <strong>Lost revenue.</strong> Retail partners are increasingly requiring sustainability documentation as a condition of doing business. If you cannot respond to a buyer questionnaire from Nordstrom, Selfridges, or Galeries Lafayette with specific, verified data, you are at a competitive disadvantage to brands that can.
+        </p>
+
+        <p>
+            <strong>Regulatory penalties.</strong> Non-compliance with the EUDR (fines up to 4% of EU turnover), ECGT (fines up to 4% of turnover per member state), and UFLPA (goods seizure at the US border) carry direct financial consequences.
+        </p>
+
+        <p>
+            <strong>Higher cost of capital.</strong> Private equity firms and strategic investors are pricing ESG risk into their valuations. A brand with documented supply chain practices, verified claims, and traceable materials is a lower-risk investment. That translates directly into valuation premiums or, conversely, valuation discounts for brands without these basics in place.
+        </p>
+
+        <p>
+            <strong>Operational inefficiency.</strong> Brands that invest in supply chain visibility frequently discover cost savings: redundant suppliers, excess material waste, inefficient logistics routes, and over-ordering driven by poor demand forecasting. The data infrastructure required for sustainability also improves operational decision-making.
+        </p>
+
+        <div class="callout">
+            <p>
+                <strong>The proportionality principle:</strong> Nobody expects a $20 million brand to have the supply chain infrastructure of a $5 billion one. What regulators, investors, and retail partners expect is evidence of a systematic approach: a documented supplier list, a code of conduct, a material inventory, and a plan for closing your biggest gaps. The bar is not perfection. The bar is not guessing.
+            </p>
+        </div>
+
+        <!-- ═══════════════════════════════════════ -->
+        <h2>A Prioritised Action Plan</h2>
+
+        <p>
+            If your brand has not yet started on supply chain sustainability, here is a practical sequence. Each step builds on the one before it and creates the foundation for the next.
+        </p>
+
+        <p>
+            <strong>Month 1: Map your Tier 1 suppliers completely.</strong> Name, location, parent company, products made for you, annual volume. If you are already doing this, verify the list is current and comprehensive.
+        </p>
+
+        <p>
+            <strong>Month 2: Establish a supplier code of conduct.</strong> Cover environmental practices, chemical management, labour standards, and anti-corruption. Require written acknowledgement from all Tier 1 suppliers.
+        </p>
+
+        <p>
+            <strong>Month 3: Build your material inventory.</strong> Catalogue every material you use by type, volume, supplier, and certification status. Identify your top five materials and their key sustainability risks.
+        </p>
+
+        <p>
+            <strong>Months 4-6: Begin Tier 2 mapping.</strong> Ask each Tier 1 supplier to identify the Tier 2 facilities processing your orders. Collect basic information: facility name, location, certifications, and whether they have been audited.
+        </p>
+
+        <p>
+            <strong>Months 6-9: Conduct a Scope 3 screening.</strong> Use a spend-based methodology to estimate your carbon footprint. Identify the largest emissions hotspots and determine where supplier-specific data would most improve accuracy.
+        </p>
+
+        <p>
+            <strong>Months 9-12: Address your highest-priority gaps.</strong> This will vary by brand. For some, the priority will be EUDR compliance for leather. For others, it will be chemical management documentation. For others, it will be preparing responses for retail partner questionnaires. Focus on what creates the most commercial value or reduces the most commercial risk for your specific business.
+        </p>
+
+        <div class="article-cta">
+            <h3>Not sure where your biggest supply chain risks are?</h3>
+            <p>
+                Woodlane Advisory helps fashion brands assess their supply chain exposure, prioritise action, and build the documentation that protects revenue and opens doors. Start with a conversation.
+            </p>
+            <a href="mailto:julia@woodlaneadvisory.com" class="cta-button">Book a Call</a>
+        </div>
+
+    </article>
+
+    <footer>
+        <a href="https://woodlaneadvisory.com" class="footer-logo">Woodlane Advisory</a>
+        <ul class="footer-links">
+            <li><a href="https://woodlaneadvisory.com/#services">Services</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="https://woodlaneadvisory.com/#about">About</a></li>
+            <li><a href="https://www.linkedin.com/company/woodlane-advisory" target="_blank">LinkedIn</a></li>
+        </ul>
+        <span>&copy; 2026 woodlaneadvisory.com</span>
+    </footer>
+
+</body>
+</html>
