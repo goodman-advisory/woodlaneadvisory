@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | Woodlane Advisory</title>
+    <meta name="description" content="Plain-language guides to sustainability strategy for fashion brands. Regulations, supply chain, greenwashing, materials, metrics, and building a roadmap that drives commercial value.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream: #F5F0E8;
+            --dark-olive: #2C3A2E;
+            --sage: #7A8F7E;
+            --gold: #B8956A;
+            --warm-white: #FDFBF7;
+            --text-primary: #2C3A2E;
+            --text-secondary: #5A6B5E;
+            --border-light: #E2DDD4;
+            --sage-light: #EEF2EF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Source Sans 3', 'Source Sans Pro', sans-serif;
+            color: var(--text-primary);
+            background-color: var(--warm-white);
+            line-height: 1.7;
+            font-size: 17px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── NAV ── */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 48px;
+            background: var(--warm-white);
+            border-bottom: 1px solid var(--border-light);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-logo {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--dark-olive);
+            text-decoration: none;
+            letter-spacing: 0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--dark-olive); }
+
+        .nav-links a.active {
+            color: var(--dark-olive);
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 2px;
+        }
+
+        /* ── HERO ── */
+        .hero {
+            background: var(--cream);
+            padding: 80px 48px 64px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .hero-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 44px;
+            font-weight: 500;
+            line-height: 1.2;
+            color: var(--dark-olive);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            max-width: 640px;
+        }
+
+        /* ── CONTENT ── */
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 56px 48px 80px;
+        }
+
+        /* ── TIER SECTIONS ── */
+        .tier-section {
+            margin-bottom: 56px;
+        }
+
+        .tier-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 8px;
+        }
+
+        .tier-number {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--sage);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .tier-line {
+            flex: 1;
+            height: 1px;
+            background: var(--border-light);
+        }
+
+        .tier-description {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 28px;
+            max-width: 600px;
+        }
+
+        /* ── ARTICLE CARDS ── */
+        .card-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .article-card {
+            display: block;
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            padding: 32px 36px;
+            background: var(--warm-white);
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+            position: relative;
+        }
+
+        .article-card:hover {
+            border-color: var(--sage);
+            box-shadow: 0 4px 20px rgba(44, 58, 46, 0.06);
+            transform: translateY(-2px);
+        }
+
+        .article-card.coming-soon {
+            opacity: 0.55;
+            pointer-events: none;
+        }
+
+        .card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            gap: 12px;
+        }
+
+        .card-tag {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            padding: 4px 10px;
+            border-radius: 3px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .tag-regulations { background: #E8F0E9; color: #3A6B3E; }
+        .tag-claims { background: #FFF3E0; color: #8B6914; }
+        .tag-supply-chain { background: #EDE8F0; color: #5E4B6B; }
+        .tag-operations { background: #E8EDF0; color: #4B5E6B; }
+        .tag-strategy { background: #F0EDE8; color: #6B5E4B; }
+        .tag-coming { background: #F0F0F0; color: #999; }
+
+        .card-read-time {
+            font-size: 12px;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .article-card h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 22px;
+            font-weight: 500;
+            color: var(--dark-olive);
+            line-height: 1.3;
+            margin-bottom: 10px;
+        }
+
+        .article-card p {
+            font-size: 15.5px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .card-arrow {
+            position: absolute;
+            right: 36px;
+            bottom: 32px;
+            font-size: 18px;
+            color: var(--gold);
+            opacity: 0;
+            transition: opacity 0.2s, transform 0.2s;
+            transform: translateX(-4px);
+        }
+
+        .article-card:hover .card-arrow {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .coming-badge {
+            font-size: 12px;
+            font-weight: 500;
+            color: #999;
+            font-style: italic;
+        }
+
+        /* ── CTA ── */
+        .hub-cta {
+            background: var(--cream);
+            border-radius: 6px;
+            padding: 48px 40px;
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        .hub-cta h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 28px;
+            font-weight: 500;
+            color: var(--dark-olive);
+            margin-bottom: 12px;
+        }
+
+        .hub-cta p {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 28px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--warm-white);
+            background: var(--dark-olive);
+            padding: 14px 32px;
+            border-radius: 4px;
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            transition: background 0.2s;
+        }
+
+        .cta-button:hover { background: #3D4E3F; color: var(--warm-white); }
+
+        /* ── FOOTER ── */
+        footer {
+            border-top: 1px solid var(--border-light);
+            padding: 40px 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark-olive);
+            text-decoration: none;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 13px; }
+        .footer-links a:hover { color: var(--dark-olive); }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 768px) {
+            nav { padding: 20px 24px; }
+            .nav-links { display: none; }
+            .hero { padding: 56px 24px 48px; }
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 17px; }
+            .content { padding: 40px 24px 60px; }
+            .article-card { padding: 24px 24px; }
+            .article-card h3 { font-size: 19px; }
+            .card-arrow { display: none; }
+            footer { flex-direction: column; gap: 16px; text-align: center; padding: 32px 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="https://woodlaneadvisory.com" class="nav-logo">Woodlane Advisory</a>
+        <ul class="nav-links">
+            <li><a href="https://woodlaneadvisory.com/#services">Services</a></li>
+            <li><a href="/resources" class="active">Resources</a></li>
+            <li><a href="https://woodlaneadvisory.com/#about">About</a></li>
+            <li><a href="https://woodlaneadvisory.com/#contact">Get in Touch</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+            <h1>Resources</h1>
+            <p>
+                Plain-language guides to sustainability for fashion brands. No jargon, no fluff. Regulations, supply chains, materials, claims, and strategy explained in terms that matter to your business.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <!-- TIER 1 -->
+        <section class="tier-section">
+            <div class="tier-header">
+                <span class="tier-number">Understanding the Landscape</span>
+                <div class="tier-line"></div>
+            </div>
+            <p class="tier-description">
+                What is changing, what it means for your brand, and why it matters now.
+            </p>
+
+            <div class="card-grid">
+
+                <a href="/resources/csrd-fashion-brands" class="article-card">
+                    <div class="card-top">
+                        <span class="card-tag tag-regulations">Regulations</span>
+                        <span class="card-read-time">12 min read</span>
+                    </div>
+                    <h3>What EU and US Sustainability Regulations Do Growing Fashion Brands Need to Prepare For?</h3>
+                    <p>CSRD, EUDR, the EU Green Transition Directive, ESPR, California's SB 707, textile EPR, and the NY Fashion Act. What they require, who they affect, and what to prioritise.</p>
+                    <span class="card-arrow">&rarr;</span>
+                </a>
+
+                <a href="/resources/greenwashing-claims-strategy" class="article-card">
+                    <div class="card-top">
+                        <span class="card-tag tag-claims">Claims &amp; Communications</span>
+                        <span class="card-read-time">14 min read</span>
+                    </div>
+                    <h3>How to Communicate Your Sustainability Efforts Without Risking Greenwashing Accusations</h3>
+                    <p>What counts as greenwashing, the words now regulated in the EU, and how to build a claims framework that is specific, substantiated, and legally defensible.</p>
+                    <span class="card-arrow">&rarr;</span>
+                </a>
+
+                <a href="/resources/supply-chain-risks" class="article-card">
+                    <div class="card-top">
+                        <span class="card-tag tag-supply-chain">Supply Chain</span>
+                        <span class="card-read-time">15 min read</span>
+                    </div>
+                    <h3>What Are the Biggest Supply Chain Sustainability Risks for Mid-Market Fashion Brands?</h3>
+                    <p>Scope 3 emissions, traceability gaps, materials exposure, chemical management, and labour practices. Where the risk sits, and a prioritised action plan for addressing it.</p>
+                    <span class="card-arrow">&rarr;</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- TIER 2 -->
+        <section class="tier-section">
+            <div class="tier-header">
+                <span class="tier-number">Operational How-Tos</span>
+                <div class="tier-line"></div>
+            </div>
+            <p class="tier-description">
+                Practical guidance for operations and product teams ready to take action.
+            </p>
+
+            <div class="card-grid">
+
+                <div class="article-card coming-soon">
+                    <div class="card-top">
+                        <span class="card-tag tag-operations">Operations</span>
+                        <span class="coming-badge">Coming soon</span>
+                    </div>
+                    <h3>How Do You Conduct a Baseline Sustainability Audit for a Fashion Brand?</h3>
+                    <p>The first step before hiring a consultant or building a strategy. What to assess, how to structure the process, and what a useful baseline looks like.</p>
+                </div>
+
+                <div class="article-card coming-soon">
+                    <div class="card-top">
+                        <span class="card-tag tag-operations">Materials &amp; Sourcing</span>
+                        <span class="coming-badge">Coming soon</span>
+                    </div>
+                    <h3>Cost-Effective Ways to Transition to Sustainable Materials Without Disrupting Operations</h3>
+                    <p>Organic cotton vs. recycled polyester. Certification pathways. How to phase materials in without breaking your supply chain or your margins.</p>
+                </div>
+
+                <div class="article-card coming-soon">
+                    <div class="card-top">
+                        <span class="card-tag tag-operations">Metrics &amp; Reporting</span>
+                        <span class="coming-badge">Coming soon</span>
+                    </div>
+                    <h3>What Sustainability Metrics Actually Matter to Today's Fashion Consumers and Investors?</h3>
+                    <p>Which KPIs to track, what to put in your annual report, and how to avoid drowning in ESG data that nobody uses.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TIER 3 -->
+        <section class="tier-section">
+            <div class="tier-header">
+                <span class="tier-number">Strategy &amp; ROI</span>
+                <div class="tier-line"></div>
+            </div>
+            <p class="tier-description">
+                The business case for sustainability. For founders, CEOs, and CFOs.
+            </p>
+
+            <div class="card-grid">
+
+                <div class="article-card coming-soon">
+                    <div class="card-top">
+                        <span class="card-tag tag-strategy">Strategy</span>
+                        <span class="coming-badge">Coming soon</span>
+                    </div>
+                    <h3>How to Build a Fashion Sustainability Strategy That Protects (and Grows) Profit Margins</h3>
+                    <p>The ROI of circularity, waste reduction, and premium positioning. How to make the case to the CFO.</p>
+                </div>
+
+                <div class="article-card coming-soon">
+                    <div class="card-top">
+                        <span class="card-tag tag-strategy">Valuation</span>
+                        <span class="coming-badge">Coming soon</span>
+                    </div>
+                    <h3>How Does a Strong Sustainability Strategy Increase Brand Valuation for Consumer Fashion Companies?</h3>
+                    <p>For founders looking toward an exit, acquisition, or funding round. How PE firms and strategic buyers evaluate ESG risk.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TIER 4 -->
+        <section class="tier-section">
+            <div class="tier-header">
+                <span class="tier-number">Working with an Advisor</span>
+                <div class="tier-line"></div>
+            </div>
+            <p class="tier-description">
+                When to bring in outside help, and what to expect.
+            </p>
+
+            <div class="card-grid">
+
+                <div class="article-card coming-soon">
+                    <div class="card-top">
+                        <span class="card-tag tag-strategy">Roadmaps</span>
+                        <span class="coming-badge">Coming soon</span>
+                    </div>
+                    <h3>What Does a Realistic 3-Year Sustainability Roadmap Look Like for a Scaling Fashion Brand?</h3>
+                    <p>The blueprint. What to do in year one, what to build in year two, and where you should be by year three.</p>
+                </div>
+
+                <div class="article-card coming-soon">
+                    <div class="card-top">
+                        <span class="card-tag tag-strategy">Advisory</span>
+                        <span class="coming-badge">Coming soon</span>
+                    </div>
+                    <h3>When Is the Right Time for a Fashion Brand to Hire a Sustainability Consultant?</h3>
+                    <p>Build vs. buy. What an external advisor actually does, what it costs, and how to know if your brand is ready.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <div class="hub-cta">
+            <h2>Looking for guidance specific to your brand?</h2>
+            <p>
+                These resources cover the fundamentals. For advice tailored to your supply chain, your markets, and your growth stage, start with a conversation.
+            </p>
+            <a href="mailto:julia@woodlaneadvisory.com" class="cta-button">Book a Call</a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="https://woodlaneadvisory.com" class="footer-logo">Woodlane Advisory</a>
+        <ul class="footer-links">
+            <li><a href="https://woodlaneadvisory.com/#services">Services</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="https://woodlaneadvisory.com/#about">About</a></li>
+            <li><a href="https://www.linkedin.com/company/woodlane-advisory" target="_blank">LinkedIn</a></li>
+        </ul>
+        <span>&copy; 2026 woodlaneadvisory.com</span>
+    </footer>
+
+</body>
+</html>
