@@ -29,7 +29,6 @@ nav .container{display:flex;justify-content:space-between;align-items:center}
 .nav-cta{font-size:.75rem!important;letter-spacing:.1em!important;padding:.6rem 1.5rem;border:1px solid var(--ink)!important;color:var(--ink)!important;transition:all .3s ease!important}
 .nav-cta:hover{background:var(--ink)!important;color:var(--cream)!important}
 
-/* HERO — v1 style */
 .hero{min-height:100vh;display:flex;align-items:center;position:relative;padding:8rem 0 6rem}
 .hero-content{max-width:60%;position:relative;z-index:1}
 .hero-label{font-size:.7rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--sage-deep);margin-bottom:2rem;animation:fadeUp .8s ease .2s both}
@@ -46,17 +45,13 @@ section{padding:7rem 0}
 .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,2.8rem);font-weight:300;line-height:1.2;color:var(--ink);margin-bottom:1.5rem}
 .section-title em{font-style:italic;font-weight:400}
 
-/* LANDSCAPE */
 .landscape{background:var(--white);border-top:1px solid var(--rule)}
 .landscape-intro{font-size:1.05rem;font-weight:300;line-height:1.7;color:var(--warm);max-width:640px;margin-bottom:3.5rem}
 .landscape-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem;margin-bottom:3.5rem}
 .landscape-card{padding:2rem 0;border-top:2px solid var(--sage)}
 .landscape-card h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:500;color:var(--ink);margin-bottom:.75rem}
 .landscape-card p{font-size:.9rem;font-weight:300;line-height:1.7;color:var(--warm)}
-.landscape-value{font-size:1.05rem;font-weight:300;line-height:1.7;color:var(--warm);max-width:740px;border-top:1px solid var(--rule);padding-top:2.5rem}
-.landscape-value strong{font-weight:500;color:var(--ink)}
 
-/* TWO SIDES */
 .twosides{border-top:1px solid var(--rule)}
 .twosides-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:3rem}
 .side-card{padding:2.5rem;border-top:2px solid var(--sage)}
@@ -66,45 +61,6 @@ section{padding:7rem 0}
 .side-items span{font-size:.82rem;font-weight:300;color:var(--warm);padding:.2rem 0 .2rem .9rem;position:relative}
 .side-items span::before{content:'—';position:absolute;left:0;color:var(--sage)}
 
-/* SCORECARD */
-.scorecard{border-top:1px solid var(--rule)}
-.sc-subtext{font-size:.95rem;font-weight:300;line-height:1.6;color:var(--warm);max-width:500px;margin-bottom:2.5rem}
-.sc-container{background:var(--white);border:1px solid var(--rule);overflow:hidden}
-.sc-top{display:grid;grid-template-columns:1fr auto;align-items:center;padding:1.5rem 2.5rem;border-bottom:1px solid var(--rule)}
-.sc-step-label{font-size:.7rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--sage-deep)}
-.sc-score-display{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:var(--ink)}
-.sc-body{padding:2.5rem}
-.sc-category{margin-bottom:2.5rem}
-.sc-category:last-child{margin-bottom:0}
-.sc-cat-header{display:flex;align-items:center;gap:1rem;margin-bottom:1rem}
-.sc-cat-num{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;color:var(--sage);min-width:30px}
-.sc-cat-title{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:500;color:var(--ink)}
-.sc-levels{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--rule);border-radius:2px;overflow:hidden}
-.sc-level{padding:1rem 1.1rem;cursor:pointer;transition:all .2s ease;border-right:1px solid var(--rule);user-select:none;position:relative}
-.sc-level:last-child{border-right:none}
-.sc-level:hover{background:rgba(232,237,232,.3)}
-.sc-level.selected{background:var(--sage-light)}
-.sc-level.selected::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--sage-deep)}
-.sc-level-title{font-size:.7rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--sage-deep);margin-bottom:.4rem}
-.sc-level-desc{font-size:.78rem;font-weight:300;line-height:1.5;color:var(--warm)}
-.sc-level.selected .sc-level-desc{color:var(--ink)}
-
-.sc-result{padding:2.5rem;background:var(--cream);border-top:1px solid var(--rule);display:none}
-.sc-result.visible{display:block}
-.sc-result-bars{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-bottom:2rem}
-.sc-bar-label{font-size:.68rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--warm);margin-bottom:.5rem}
-.sc-bar-track{height:4px;background:var(--rule);border-radius:2px;overflow:hidden}
-.sc-bar-fill{height:100%;background:var(--sage-deep);border-radius:2px;transition:width .6s cubic-bezier(.4,0,.2,1)}
-.sc-bar-value{font-size:.72rem;font-weight:400;color:var(--sage-deep);margin-top:.3rem}
-.sc-result-grade{display:flex;align-items:center;gap:1.5rem;margin-bottom:1.25rem}
-.sc-grade-badge{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:400;color:var(--ink);line-height:1;padding:.4rem .8rem;border:1px solid var(--rule)}
-.sc-grade-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:500;color:var(--ink)}
-.sc-grade-sub{font-size:.82rem;font-weight:300;color:var(--warm);margin-top:.15rem}
-.sc-result-text{font-size:.92rem;font-weight:300;line-height:1.7;color:var(--warm);margin-bottom:1.25rem}
-.sc-result-cta{font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);text-decoration:none;padding:.75rem 2rem;border:1px solid var(--ink);transition:all .3s ease;display:inline-block}
-.sc-result-cta:hover{background:var(--ink);color:var(--cream)}
-
-/* SERVICES */
 .services{background:var(--white);border-top:1px solid var(--rule)}
 .services-intro{font-size:1.05rem;font-weight:300;line-height:1.7;color:var(--warm);max-width:640px;margin-bottom:3rem}
 .services-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule)}
@@ -113,7 +69,6 @@ section{padding:7rem 0}
 .service-item h3{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:500;color:var(--ink);margin-bottom:.75rem}
 .service-item p{font-size:.88rem;font-weight:300;line-height:1.7;color:var(--warm)}
 
-/* ENGAGEMENT */
 .engagement{border-top:1px solid var(--rule)}
 .engagement-options{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:3rem}
 .engagement-card{padding:2.5rem;border:1px solid var(--rule);transition:border-color .3s ease}
@@ -125,7 +80,18 @@ section{padding:7rem 0}
 .eng-includes span{font-size:.8rem;font-weight:300;color:var(--warm);padding:.25rem 0 .25rem .9rem;position:relative}
 .eng-includes span::before{content:'—';position:absolute;left:0;color:var(--sage)}
 
-/* APPROACH */
+.resources{background:var(--white);border-top:1px solid var(--rule)}
+.resources-intro{font-size:1.05rem;font-weight:300;line-height:1.7;color:var(--warm);max-width:640px;margin-bottom:3rem}
+.resources-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.resource-card{padding:2rem;border:1px solid var(--rule);text-decoration:none;color:inherit;transition:border-color .3s ease,transform .2s ease}
+.resource-card:hover{border-color:var(--sage);transform:translateY(-2px)}
+.resource-tag{font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-deep);margin-bottom:.75rem}
+.resource-card h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:500;color:var(--ink);line-height:1.3;margin-bottom:.5rem}
+.resource-card p{font-size:.82rem;font-weight:300;line-height:1.6;color:var(--warm)}
+.resources-link{margin-top:2rem}
+.resources-link a{font-size:.75rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);text-decoration:none;transition:color .3s ease}
+.resources-link a:hover{color:var(--sage-deep)}
+
 .approach{background:var(--ink);color:var(--cream)}
 .approach .section-label{color:var(--sage)}
 .approach .section-title{color:var(--cream)}
@@ -135,7 +101,6 @@ section{padding:7rem 0}
 .approach-point h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;color:var(--cream);margin-bottom:.5rem}
 .approach-point p{font-size:.85rem;font-weight:300;line-height:1.65;color:rgba(247,245,242,.55)}
 
-/* ABOUT */
 .about{border-top:1px solid var(--rule)}
 .about-content{display:grid;grid-template-columns:2fr 1fr;gap:4rem;align-items:start}
 .about-text p{font-size:1rem;font-weight:300;line-height:1.8;color:var(--warm);margin-bottom:1.5rem}
@@ -144,7 +109,6 @@ section{padding:7rem 0}
 .expertise-item{font-size:.88rem;font-weight:300;color:var(--warm);padding:.6rem 0;border-bottom:1px solid var(--rule)}
 .expertise-item:first-of-type{border-top:1px solid var(--rule)}
 
-/* CTA */
 .cta{background:var(--sage-light);padding:6rem 0;text-align:center}
 .cta .section-title{max-width:600px;margin:0 auto 1rem}
 .cta-text{font-size:1rem;font-weight:300;color:var(--warm);margin-bottom:2.5rem;max-width:520px;margin-left:auto;margin-right:auto}
@@ -163,10 +127,9 @@ footer .container{display:flex;justify-content:space-between;align-items:center}
   .hero{padding:7rem 0 4rem}.hero-accent{display:none}
   .landscape-grid{grid-template-columns:1fr;gap:1.5rem}
   .twosides-grid{grid-template-columns:1fr;gap:1.5rem}
-  .sc-levels{grid-template-columns:1fr 1fr}
-  .sc-result-bars{grid-template-columns:1fr 1fr}
   .services-grid{grid-template-columns:1fr}
   .engagement-options{grid-template-columns:1fr;gap:1.5rem}
+  .resources-grid{grid-template-columns:1fr;gap:1rem}
   .approach-grid{grid-template-columns:1fr;gap:1.5rem}
   .about-content{grid-template-columns:1fr;gap:2rem}
   footer .container{flex-direction:column;gap:1rem;text-align:center}
@@ -180,7 +143,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center}
     <a href="#" class="nav-logo">Woodlane Advisory</a>
     <div class="nav-links">
       <a href="#services">Services</a>
-      <a href="#scorecard">Scorecard</a>
+      <a href="/resources">Resources</a>
       <a href="#approach">Approach</a>
       <a href="#about">About</a>
       <a href="#contact" class="nav-cta">Get in Touch</a>
@@ -188,42 +151,41 @@ footer .container{display:flex;justify-content:space-between;align-items:center}
   </div>
 </nav>
 
-<!-- HERO — v1 style, single CTA -->
+<!-- HERO -->
 <section class="hero">
   <div class="container">
     <div class="hero-content">
       <p class="hero-label">Sustainability Strategy</p>
       <h1>Helping fashion brands build <em>sustainability that drives value</em></h1>
-      <p class="hero-text">Sustainability strategy for fashion brands at every stage of growth. We help brands turn sustainability into a source of commercial strength — reducing risk, building resilience, and creating value that lasts.</p>
+      <p class="hero-text">Sustainability strategy for fashion brands at every stage of growth. We help brands turn sustainability into a source of commercial strength, reducing risk, building resilience, and creating value that lasts.</p>
       <a href="#contact" class="hero-cta">Start a Conversation</a>
     </div>
   </div>
   <div class="hero-accent"></div>
 </section>
 
-<!-- LANDSCAPE — restored with value creation paragraph -->
+<!-- LANDSCAPE -->
 <section class="landscape" id="landscape">
   <div class="container">
     <div class="reveal">
       <p class="section-label">The Landscape</p>
-      <h2 class="section-title">Sustainability is no longer optional.<br><em>But most brands aren't ready.</em></h2>
-      <p class="landscape-intro">Regulations are tightening across the EU, UK, and US. Retail partners are raising the bar on supplier requirements. Consumers are demanding transparency and authenticity. The brands that move now build lasting advantage.</p>
+      <h2 class="section-title">Three forces are reshaping the industry.<br><em>Most brands are not ready.</em></h2>
+      <p class="landscape-intro">The EU's anti-greenwashing rules take effect in September 2026. California's textile EPR law requires producer compliance by July 2026. Major retailers are tightening sustainability requirements for brand partners. The brands that act now build lasting advantage. The brands that wait are accumulating risk.</p>
     </div>
     <div class="landscape-grid">
       <div class="landscape-card reveal">
         <h3>Regulatory Pressure</h3>
-        <p>A wave of new regulations is reshaping the fashion industry — from product passports and anti-greenwashing directives to extended producer responsibility and supply chain due diligence. Brands selling across borders need to understand what applies to them and prepare accordingly.</p>
+        <p>Seven regulations will directly affect mid-market fashion brands in the next 24 months. The EUDR mandates deforestation-free proof for leather by December 2026. CSRD is driving value chain data requests from major retailers. The NY Fashion Act could require supply chain due diligence for brands doing business in New York. These are enforceable laws with fines attached.</p>
       </div>
       <div class="landscape-card reveal">
         <h3>Supply Chain Expectations</h3>
-        <p>Traceability, material provenance, animal welfare, chemicals management, and labour practices are under growing attention — from regulators, retail partners, media, and customers. Gaps in visibility create exposure at every level.</p>
+        <p>Retail partners including Nordstrom, Selfridges, Net-a-Porter, and Galeries Lafayette are tightening sustainability requirements for brand partners. Traceability, materials documentation, chemical management, and labor due diligence are becoming conditions of doing business. Gaps in visibility create exposure at every level.</p>
       </div>
       <div class="landscape-card reveal">
-        <h3>Brand Credibility</h3>
-        <p>Consumers and media are evaluating sustainability claims with increasing sophistication. Unsubstantiated claims carry legal, reputational, and commercial risk. Authentic transparency has become a genuine competitive advantage.</p>
+        <h3>Claims Scrutiny</h3>
+        <p>Italy fined Shein &euro;1 million for vague sustainability claims. The UK can now impose penalties of up to 10% of global turnover for greenwashing. From September 2026, generic terms like "eco-friendly" and "sustainable" will be banned in the EU unless backed by verified evidence. Unsubstantiated claims carry legal, reputational, and commercial risk.</p>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -237,7 +199,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center}
     <div class="twosides-grid">
       <div class="side-card reveal">
         <h3>Risk Mitigation</h3>
-        <p>Identifying and closing the gaps that create regulatory, reputational, and commercial exposure — before they become problems.</p>
+        <p>Identifying and closing the gaps that create regulatory, reputational, and commercial exposure before they become problems.</p>
         <div class="side-items">
           <span>Regulatory readiness across EU, UK, and US markets</span>
           <span>Greenwashing risk and claims substantiation</span>
@@ -247,151 +209,13 @@ footer .container{display:flex;justify-content:space-between;align-items:center}
       </div>
       <div class="side-card reveal">
         <h3>Value Creation</h3>
-        <p>Turning sustainability into a competitive advantage — deepening customer loyalty, strengthening brand positioning, and building long-term resilience.</p>
+        <p>Turning sustainability into a competitive advantage that protects revenue, improves margins, and strengthens your position with investors and partners.</p>
         <div class="side-items">
-          <span>A credible sustainability narrative that resonates</span>
+          <span>A credible sustainability narrative backed by evidence</span>
           <span>Materials and sourcing that reinforce brand positioning</span>
           <span>Circularity as a customer engagement strategy</span>
           <span>Investor and stakeholder readiness</span>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SCORECARD -->
-<section class="scorecard" id="scorecard">
-  <div class="container">
-    <div class="reveal">
-      <p class="section-label">Self-Assessment</p>
-      <h2 class="section-title">Is your brand ready?</h2>
-      <p class="sc-subtext">A quick diagnostic across four dimensions of sustainability readiness. Select the level that best describes your brand today — it takes less than two minutes.</p>
-    </div>
-
-    <div class="sc-container reveal">
-      <div class="sc-top">
-        <div class="sc-step-label">Select one level per category</div>
-        <div class="sc-score-display" id="overallLabel">—</div>
-      </div>
-      <div class="sc-body">
-
-        <div class="sc-category">
-          <div class="sc-cat-header">
-            <div class="sc-cat-num">01</div>
-            <div class="sc-cat-title">Supply Chain & Traceability</div>
-          </div>
-          <div class="sc-levels">
-            <div class="sc-level" data-cat="supply" data-val="1" onclick="selectLevel(this)">
-              <div class="sc-level-title">Starting Out</div>
-              <div class="sc-level-desc">We know who makes our finished products but have limited visibility beyond that</div>
-            </div>
-            <div class="sc-level" data-cat="supply" data-val="2" onclick="selectLevel(this)">
-              <div class="sc-level-title">Developing</div>
-              <div class="sc-level-desc">We can identify most Tier 1 and some Tier 2 suppliers and are beginning to collect data</div>
-            </div>
-            <div class="sc-level" data-cat="supply" data-val="3" onclick="selectLevel(this)">
-              <div class="sc-level-title">Established</div>
-              <div class="sc-level-desc">Documented supply chain maps to Tier 2 with ongoing supplier data collection and engagement</div>
-            </div>
-            <div class="sc-level" data-cat="supply" data-val="4" onclick="selectLevel(this)">
-              <div class="sc-level-title">Leading</div>
-              <div class="sc-level-desc">Full traceability to raw material origin with active supplier assessment programmes</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="sc-category">
-          <div class="sc-cat-header">
-            <div class="sc-cat-num">02</div>
-            <div class="sc-cat-title">Materials, Sourcing & Animal Welfare</div>
-          </div>
-          <div class="sc-levels">
-            <div class="sc-level" data-cat="materials" data-val="1" onclick="selectLevel(this)">
-              <div class="sc-level-title">Starting Out</div>
-              <div class="sc-level-desc">Materials selected primarily on quality and cost — no formal sustainability or animal welfare criteria</div>
-            </div>
-            <div class="sc-level" data-cat="materials" data-val="2" onclick="selectLevel(this)">
-              <div class="sc-level-title">Developing</div>
-              <div class="sc-level-desc">Some certified or preferred materials in use; aware of animal welfare concerns for materials like leather, cashmere, and wool</div>
-            </div>
-            <div class="sc-level" data-cat="materials" data-val="3" onclick="selectLevel(this)">
-              <div class="sc-level-title">Established</div>
-              <div class="sc-level-desc">A sourcing policy with material targets, key certifications, and clear animal welfare and chemicals standards</div>
-            </div>
-            <div class="sc-level" data-cat="materials" data-val="4" onclick="selectLevel(this)">
-              <div class="sc-level-title">Leading</div>
-              <div class="sc-level-desc">Comprehensive materials strategy with targets, restricted substance management, and verified welfare practices</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="sc-category">
-          <div class="sc-cat-header">
-            <div class="sc-cat-num">03</div>
-            <div class="sc-cat-title">Claims, Compliance & Circularity</div>
-          </div>
-          <div class="sc-levels">
-            <div class="sc-level" data-cat="compliance" data-val="1" onclick="selectLevel(this)">
-              <div class="sc-level-title">Starting Out</div>
-              <div class="sc-level-desc">We make some sustainability references but haven't assessed our claims or regulatory exposure</div>
-            </div>
-            <div class="sc-level" data-cat="compliance" data-val="2" onclick="selectLevel(this)">
-              <div class="sc-level-title">Developing</div>
-              <div class="sc-level-desc">Aware of key regulations and reviewing claims, but no formal audit; beginning to consider product longevity</div>
-            </div>
-            <div class="sc-level" data-cat="compliance" data-val="3" onclick="selectLevel(this)">
-              <div class="sc-level-title">Established</div>
-              <div class="sc-level-desc">Claims substantiated, regulatory obligations understood, and product durability and end-of-life considered</div>
-            </div>
-            <div class="sc-level" data-cat="compliance" data-val="4" onclick="selectLevel(this)">
-              <div class="sc-level-title">Leading</div>
-              <div class="sc-level-desc">Fully substantiated claims, proactive regulatory monitoring, and active circularity initiatives</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="sc-category">
-          <div class="sc-cat-header">
-            <div class="sc-cat-num">04</div>
-            <div class="sc-cat-title">Strategy, Measurement & Reporting</div>
-          </div>
-          <div class="sc-levels">
-            <div class="sc-level" data-cat="strategy" data-val="1" onclick="selectLevel(this)">
-              <div class="sc-level-title">Starting Out</div>
-              <div class="sc-level-desc">Sustainability is a priority in principle but we don't have a formal strategy or published commitments</div>
-            </div>
-            <div class="sc-level" data-cat="strategy" data-val="2" onclick="selectLevel(this)">
-              <div class="sc-level-title">Developing</div>
-              <div class="sc-level-desc">Beginning to measure impact with a basic sustainability page, but no formal targets or roadmap yet</div>
-            </div>
-            <div class="sc-level" data-cat="strategy" data-val="3" onclick="selectLevel(this)">
-              <div class="sc-level-title">Established</div>
-              <div class="sc-level-desc">Published commitments, carbon footprint measurement, and a roadmap with milestones and accountability</div>
-            </div>
-            <div class="sc-level" data-cat="strategy" data-val="4" onclick="selectLevel(this)">
-              <div class="sc-level-title">Leading</div>
-              <div class="sc-level-desc">Comprehensive reporting, science-based targets, sustainability integrated into leadership decisions</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="sc-result" id="scoreResult">
-        <div class="sc-result-bars">
-          <div><div class="sc-bar-label">Supply Chain</div><div class="sc-bar-track"><div class="sc-bar-fill" id="bar-supply" style="width:0%"></div></div><div class="sc-bar-value" id="val-supply">—</div></div>
-          <div><div class="sc-bar-label">Materials</div><div class="sc-bar-track"><div class="sc-bar-fill" id="bar-materials" style="width:0%"></div></div><div class="sc-bar-value" id="val-materials">—</div></div>
-          <div><div class="sc-bar-label">Compliance</div><div class="sc-bar-track"><div class="sc-bar-fill" id="bar-compliance" style="width:0%"></div></div><div class="sc-bar-value" id="val-compliance">—</div></div>
-          <div><div class="sc-bar-label">Strategy</div><div class="sc-bar-track"><div class="sc-bar-fill" id="bar-strategy" style="width:0%"></div></div><div class="sc-bar-value" id="val-strategy">—</div></div>
-        </div>
-        <div class="sc-result-grade">
-          <div class="sc-grade-badge" id="gradeBadge">—</div>
-          <div>
-            <div class="sc-grade-title" id="gradeTitle"></div>
-            <div class="sc-grade-sub" id="gradeSub"></div>
-          </div>
-        </div>
-        <p class="sc-result-text" id="gradeText"></p>
-        <a href="#contact" class="sc-result-cta">Discuss Your Results</a>
       </div>
     </div>
   </div>
@@ -402,7 +226,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center}
     <div class="reveal">
       <p class="section-label">Services</p>
       <h2 class="section-title">From baseline to <em>built-in</em></h2>
-      <p class="services-intro">We work across the full spectrum of fashion sustainability — from supply chain foundations to brand narrative and circularity. Every engagement is shaped around your brand and what will create the most value.</p>
+      <p class="services-intro">We cover the full spectrum of fashion sustainability. Every engagement is shaped around your brand and where the most value sits.</p>
     </div>
     <div class="services-grid">
       <div class="service-item reveal">
@@ -413,17 +237,17 @@ footer .container{display:flex;justify-content:space-between;align-items:center}
       <div class="service-item reveal">
         <p class="service-number">02</p>
         <h3>Materials, Sourcing & Animal Welfare</h3>
-        <p>Reviewing your material portfolio and building a sourcing strategy aligned with best practice. Certification pathways, animal welfare standards for materials like leather, cashmere, and wool, and chemicals management.</p>
+        <p>Reviewing your material portfolio and building a sourcing strategy aligned with best practice. Certification pathways, animal welfare standards for leather, cashmere, and wool, and chemicals management.</p>
       </div>
       <div class="service-item reveal">
         <p class="service-number">03</p>
         <h3>Claims, Compliance & Circularity</h3>
-        <p>Auditing sustainability claims for greenwashing risk. Regulatory readiness across key markets. Circularity strategy — from product durability and repair to end-of-life and take-back considerations.</p>
+        <p>Auditing sustainability claims for greenwashing risk. Regulatory readiness across key markets. Circularity strategy, from product durability and repair to end-of-life and take-back.</p>
       </div>
       <div class="service-item reveal">
         <p class="service-number">04</p>
         <h3>Strategy, Measurement & Reporting</h3>
-        <p>Building your sustainability roadmap with clear targets and milestones. Carbon footprint measurement. Sustainability narrative and reporting — for your customers, your retail partners, or your investors.</p>
+        <p>Building your sustainability roadmap with clear targets and milestones. Carbon footprint measurement. Sustainability narrative and reporting for your customers, your retail partners, or your investors.</p>
       </div>
     </div>
   </div>
@@ -438,20 +262,20 @@ footer .container{display:flex;justify-content:space-between;align-items:center}
     <div class="engagement-options">
       <div class="engagement-card reveal">
         <h3>Discovery & Roadmap</h3>
-        <span class="subtitle">Focused engagement · 4–6 weeks</span>
-        <p>A comprehensive assessment of your sustainability position — supply chain, materials, claims, regulatory exposure — delivered as a prioritised roadmap with clear commercial rationale.</p>
+        <span class="subtitle">Focused engagement · 4 to 6 weeks</span>
+        <p>A comprehensive assessment of your sustainability position, delivered as a prioritized roadmap with clear commercial rationale for every recommendation.</p>
         <div class="eng-includes">
           <span>Supply chain mapping and traceability review</span>
           <span>Materials and sourcing assessment</span>
           <span>Greenwashing risk and claims audit</span>
           <span>Regulatory exposure analysis</span>
-          <span>Prioritised action plan and presentation</span>
+          <span>Prioritized action plan and presentation</span>
         </div>
       </div>
       <div class="engagement-card reveal">
         <h3>Embedded Advisory</h3>
         <span class="subtitle">Ongoing partnership · Monthly retainer</span>
-        <p>Sustainability managed as a core operational function. We work alongside your team to embed sustainability into how your brand operates — from supplier engagement to regulatory compliance to brand narrative.</p>
+        <p>Sustainability managed as a core operational function. We work alongside your team to embed sustainability into how your brand operates day to day.</p>
         <div class="eng-includes">
           <span>Supplier data collection and engagement</span>
           <span>Claims review and substantiation</span>
@@ -465,25 +289,56 @@ footer .container{display:flex;justify-content:space-between;align-items:center}
   </div>
 </section>
 
+<!-- RESOURCES -->
+<section class="resources" id="resources">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label">Resources</p>
+      <h2 class="section-title">Guides for fashion brands navigating <em>sustainability</em></h2>
+      <p class="resources-intro">Plain-language explanations of the regulations, supply chain risks, and communication challenges that matter most to growing fashion brands. No jargon. No fluff.</p>
+    </div>
+    <div class="resources-grid">
+      <a href="/resources/csrd-fashion-brands" class="resource-card reveal">
+        <div class="resource-tag">Regulations</div>
+        <h3>EU and US Sustainability Regulations for Fashion Brands</h3>
+        <p>CSRD, EUDR, California SB 707, textile EPR, and the NY Fashion Act. What they require and when.</p>
+      </a>
+      <a href="/resources/greenwashing-claims-strategy" class="resource-card reveal">
+        <div class="resource-tag">Claims</div>
+        <h3>How to Communicate Sustainability Without Greenwashing Risk</h3>
+        <p>The words now regulated, the fines being imposed, and how to build a defensible claims framework.</p>
+      </a>
+      <a href="/resources/supply-chain-risks" class="resource-card reveal">
+        <div class="resource-tag">Supply Chain</div>
+        <h3>The Biggest Supply Chain Sustainability Risks</h3>
+        <p>Scope 3 emissions, traceability gaps, materials exposure, and a prioritized action plan.</p>
+      </a>
+    </div>
+    <div class="resources-link reveal">
+      <a href="/resources">View all resources →</a>
+    </div>
+  </div>
+</section>
+
 <section class="approach" id="approach">
   <div class="container">
     <div class="reveal">
       <p class="section-label">Approach</p>
       <h2 class="section-title">One experienced practitioner. <em>Your whole sustainability function.</em></h2>
-      <p class="approach-text">We work as an embedded partner — not a consultancy that hands you a report and disappears. You get an experienced practitioner who understands both the commercial and the environmental side, working directly with your team from day one.</p>
+      <p class="approach-text">We work as an embedded partner, not a consultancy that hands you a report and disappears. You get a practitioner who understands both the commercial and the environmental side, working directly with your team from day one.</p>
     </div>
     <div class="approach-grid">
       <div class="approach-point reveal">
         <h3>Commercially grounded</h3>
-        <p>A background in consumer brand commercial leadership. We understand growth, margins, and brand dynamics — and we connect every sustainability recommendation to business outcomes.</p>
+        <p>A background in consumer brand commercial leadership. We understand growth, margins, and brand dynamics. Every sustainability recommendation connects to a business outcome: revenue protection, margin improvement, investor readiness, or regulatory cost avoidance.</p>
       </div>
       <div class="approach-point reveal">
-        <h3>Practical and prioritised</h3>
-        <p>Clear priorities, not frameworks. What to do this quarter, what can wait, and what you can safely set aside. We focus on what will move the needle for a brand your size.</p>
+        <h3>Practical and prioritized</h3>
+        <p>Clear priorities, not frameworks. What to do this quarter, what can wait, and what you can safely set aside. We focus on what will move the needle for a brand your size, with the resources you actually have.</p>
       </div>
       <div class="approach-point reveal">
         <h3>Fashion-specific expertise</h3>
-        <p>We work exclusively with fashion brands. We understand the materials, the supply chains, the regulatory landscape, and the customer expectations specific to this industry.</p>
+        <p>We work exclusively with fashion brands. We understand the materials, the supply chains, the regulatory landscape, and the customer expectations specific to this industry. No time wasted explaining your business model.</p>
       </div>
     </div>
   </div>
@@ -496,9 +351,9 @@ footer .container{display:flex;justify-content:space-between;align-items:center}
         <p class="section-label">About</p>
         <h2 class="section-title">Julia Goodman</h2>
         <div class="about-text">
-          <p>Woodlane Advisory was founded to bridge a gap we saw repeatedly: fashion brands that want to do sustainability well but lack the bandwidth, the expertise, or the roadmap to make it real — and consultancies that produce reports but don't embed the work.</p>
-          <p>Julia brings a decade of experience across consumer brand commercial leadership, supply chain sustainability, and climate finance. She currently focuses on textile supply chain decarbonisation strategy at the International Finance Corporation (IFC, World Bank Group), and has held commercial leadership roles at international fashion and consumer brands. She holds an MPA in Energy and Environment from Columbia University.</p>
-          <p>She believes sustainability should be a source of competitive strength — not a compliance exercise.</p>
+          <p>Woodlane Advisory exists because of a gap I saw repeatedly: fashion brands that want to do sustainability well but lack the bandwidth, the expertise, or the roadmap to make it real. And consultancies that produce reports but do not embed the work.</p>
+          <p>I bring over a decade of experience across consumer brand commercial leadership, supply chain sustainability, and climate finance. I currently focus on textile supply chain decarbonization strategy at the International Finance Corporation (IFC, World Bank Group), and have held commercial leadership roles at international fashion and consumer brands. I hold an MPA in Energy and Environment from Columbia University.</p>
+          <p>Sustainability should be a source of competitive strength, not a compliance exercise.</p>
         </div>
       </div>
       <div class="about-expertise reveal">
@@ -509,7 +364,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center}
         <div class="expertise-item">Greenwashing risk and claims review</div>
         <div class="expertise-item">Circularity and product lifecycle</div>
         <div class="expertise-item">ESG strategy and investor readiness</div>
-        <div class="expertise-item">Carbon measurement and decarbonisation</div>
+        <div class="expertise-item">Carbon measurement and decarbonization</div>
       </div>
     </div>
   </div>
@@ -520,7 +375,7 @@ footer .container{display:flex;justify-content:space-between;align-items:center}
     <div class="reveal">
       <p class="section-label">Get in Touch</p>
       <h2 class="section-title">Let's start with a <em>conversation</em></h2>
-      <p class="cta-text">Book a complimentary 30-minute call. We'll discuss your brand, your supply chain, and what's on your mind with sustainability — and give you an honest perspective on what matters most and where to start.</p>
+      <p class="cta-text">Book a complimentary 30-minute call. We will discuss your brand, your supply chain, and your sustainability plans, and give you an honest perspective on what matters most and where to start.</p>
       <a href="mailto:julia@woodlaneadvisory.com" class="hero-cta" style="animation:none">Book a Call →</a>
       <p class="cta-note">Based in the New York area. All conversations are confidential.</p>
     </div>
@@ -532,63 +387,21 @@ footer .container{display:flex;justify-content:space-between;align-items:center}
     <span class="footer-logo">Woodlane Advisory</span>
     <div class="footer-links">
       <a href="#services">Services</a>
+      <a href="/resources">Resources</a>
       <a href="#approach">Approach</a>
       <a href="#about">About</a>
-     <a href="https://www.linkedin.com/company/woodlane-advisory" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/company/woodlane-advisory" target="_blank">LinkedIn</a>
     </div>
     <span class="footer-copy">© 2026 · woodlaneadvisory.com</span>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 nav=document.querySelector('nav');
 window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>60));
 const observer=new IntersectionObserver(e=>{e.forEach((en,i)=>{if(en.isIntersecting){setTimeout(()=>en.target.classList.add('visible'),i*80);observer.unobserve(en.target)}})},{threshold:.15});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
-
-const scores={supply:0,materials:0,compliance:0,strategy:0};
-const levelNames=['—','Starting Out','Developing','Established','Leading'];
-
-function selectLevel(el){
-  const cat=el.dataset.cat,val=parseInt(el.dataset.val);
-  el.parentElement.querySelectorAll('.sc-level').forEach(s=>s.classList.remove('selected'));
-  el.classList.add('selected');
-  scores[cat]=val;
-  updateResult();
-}
-
-function updateResult(){
-  const cats=['supply','materials','compliance','strategy'];
-  let total=0,answered=0;
-  cats.forEach(c=>{
-    if(scores[c]>0){answered++;total+=scores[c]}
-    document.getElementById('bar-'+c).style.width=(scores[c]/4*100)+'%';
-    document.getElementById('val-'+c).textContent=scores[c]>0?levelNames[scores[c]]:'—';
-  });
-  const result=document.getElementById('scoreResult');
-  if(answered===0){result.classList.remove('visible');document.getElementById('overallLabel').textContent='—';return}
-  result.classList.add('visible');
-  const avg=total/4;
-  const badge=document.getElementById('gradeBadge'),title=document.getElementById('gradeTitle'),sub=document.getElementById('gradeSub'),text=document.getElementById('gradeText'),label=document.getElementById('overallLabel');
-  if(avg<=1.25){
-    badge.textContent='Early';title.textContent='Foundation Stage';label.textContent='Early Stage';
-    sub.textContent='Significant opportunity to build foundations';
-    text.textContent='This is where most growing fashion brands start — and it\'s an honest baseline, not a failing grade. The priority is understanding your supply chain, getting visibility into your materials, and ensuring any claims you\'re making can be substantiated. A focused Discovery engagement can establish these foundations in weeks, not months.';
-  } else if(avg<=2.25){
-    badge.textContent='Emerging';title.textContent='Building Momentum';label.textContent='Emerging';
-    sub.textContent='Some foundations in place, key gaps remain';
-    text.textContent='You\'ve made progress in some areas, but the gaps that remain are likely the ones that create the most risk — and the most opportunity. A clear roadmap connecting your sustainability work to your commercial priorities and brand narrative would be the natural next step.';
-  } else if(avg<=3.25){
-    badge.textContent='Established';title.textContent='Solid Foundations';label.textContent='Established';
-    sub.textContent='Core elements in place, room to strengthen and leverage';
-    text.textContent='You\'re ahead of most brands at a similar stage of growth. The opportunity now is to turn your sustainability work from a defensive position into an active competitive advantage — a credible brand narrative, stronger partnerships, and the systems to maintain and build on it as you scale.';
-  } else {
-    badge.textContent='Leading';title.textContent='Industry-Leading Readiness';label.textContent='Leading';
-    sub.textContent='Comprehensive sustainability integration';
-    text.textContent='Exceptional. You\'ve built sustainability into the fabric of your operations. At this stage, the focus is maintaining momentum, staying ahead of evolving regulations, and fully leveraging your position as a genuine differentiator with customers, partners, and investors.';
-  }
-}
 </script>
 </body>
 </html>
