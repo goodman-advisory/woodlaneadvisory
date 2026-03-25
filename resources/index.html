@@ -5,78 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources | Woodlane Advisory</title>
     <meta name="description" content="Plain-language guides to sustainability strategy for fashion brands. Regulations, supply chain, greenwashing, materials, metrics, and building a roadmap that drives commercial value.">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
     <style>
+        /* Matched Main Page Variables */
         :root {
-            --cream: #F5F0E8;
-            --dark-olive: #2C3A2E;
-            --sage: #7A8F7E;
-            --gold: #B8956A;
-            --warm-white: #FDFBF7;
-            --text-primary: #2C3A2E;
-            --text-secondary: #5A6B5E;
-            --border-light: #E2DDD4;
-            --sage-light: #EEF2EF;
+            --stone: #F7F5F2;
+            --cream: #FAF9F7;
+            --ink: #1A1A1A;
+            --warm: #6B5E53;
+            --sage: #7A8B7A;
+            --sage-light: #E8EDE8;
+            --sage-deep: #4A5C4A;
+            --rule: #D8D3CC;
+            --white: #FFFFFF;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
+        /* Matched Main Page Body Typography */
         body {
-            font-family: 'Source Sans 3', 'Source Sans Pro', sans-serif;
-            color: var(--text-primary);
-            background-color: var(--warm-white);
+            font-family: 'DM Sans', sans-serif;
+            color: var(--ink);
+            background-color: var(--cream);
             line-height: 1.7;
-            font-size: 17px;
+            font-size: 16px;
             -webkit-font-smoothing: antialiased;
         }
 
-        /* ── NAV ── */
+        /* ── NAV (Matched to Main Page) ── */
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 24px 48px;
-            background: var(--warm-white);
-            border-bottom: 1px solid var(--border-light);
+            padding: 1.5rem 48px; /* Adjusted padding to match resources layout but main style */
+            background: rgba(250,249,247,.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--rule);
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
         .nav-logo {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 18px;
-            font-weight: 600;
-            color: var(--dark-olive);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-weight: 500;
+            letter-spacing: .08em;
+            color: var(--ink);
             text-decoration: none;
-            letter-spacing: 0.02em;
+            text-transform: uppercase;
         }
 
         .nav-links {
             display: flex;
-            gap: 32px;
+            gap: 2rem;
             list-style: none;
+            align-items: center;
         }
 
         .nav-links a {
-            font-size: 14px;
-            font-weight: 500;
-            color: var(--text-secondary);
-            text-decoration: none;
-            letter-spacing: 0.03em;
+            font-size: .8rem;
+            font-weight: 400;
+            letter-spacing: .06em;
             text-transform: uppercase;
-            transition: color 0.2s;
+            color: var(--warm);
+            text-decoration: none;
+            transition: color .3s ease;
         }
 
-        .nav-links a:hover { color: var(--dark-olive); }
+        .nav-links a:hover { 
+            color: var(--ink); 
+        }
 
         .nav-links a.active {
-            color: var(--dark-olive);
-            border-bottom: 2px solid var(--gold);
+            color: var(--ink);
+            border-bottom: 1px solid var(--ink);
             padding-bottom: 2px;
         }
+        
 
         /* ── HERO ── */
         .hero {
