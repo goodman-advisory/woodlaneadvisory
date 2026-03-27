@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Does a Realistic 3-Year Sustainability Roadmap Look Like for a Scaling Fashion Brand? | Woodlane Advisory</title>
+    <meta name="description" content="The blueprint. What to do in year one, what to build in year two, and where you should be by year three. A practical sustainability roadmap for mid-market fashion brands.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream: #F5F0E8;
+            --dark-olive: #2C3A2E;
+            --sage: #7A8F7E;
+            --gold: #B8956A;
+            --warm-white: #FDFBF7;
+            --text-primary: #2C3A2E;
+            --text-secondary: #5A6B5E;
+            --border-light: #E2DDD4;
+            --sage-light: #EEF2EF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Sans 3', 'Source Sans Pro', sans-serif;
+            color: var(--text-primary);
+            background-color: var(--warm-white);
+            line-height: 1.7;
+            font-size: 17px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 48px;
+            background: var(--warm-white);
+            border-bottom: 1px solid var(--border-light);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-logo {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--dark-olive);
+            text-decoration: none;
+            letter-spacing: 0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--dark-olive);
+        }
+
+        .hero {
+            background: var(--cream);
+            padding: 80px 48px 72px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .hero-inner {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .hero-breadcrumb {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--sage);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 24px;
+        }
+
+        .hero-breadcrumb a {
+            color: var(--sage);
+            text-decoration: none;
+        }
+
+        .hero-breadcrumb a:hover {
+            color: var(--dark-olive);
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 1.25;
+            color: var(--dark-olive);
+            margin-bottom: 24px;
+        }
+
+        .hero-meta {
+            font-size: 14px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .hero-meta span {
+            margin-right: 16px;
+        }
+
+        .article-container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 56px 48px 80px;
+        }
+
+        .article-container p {
+            margin-bottom: 24px;
+            color: var(--text-primary);
+        }
+
+        .article-container h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 28px;
+            font-weight: 500;
+            color: var(--dark-olive);
+            margin-top: 56px;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .article-container h3 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--dark-olive);
+            margin-top: 40px;
+            margin-bottom: 12px;
+        }
+
+        .article-container strong {
+            font-weight: 600;
+            color: var(--dark-olive);
+        }
+
+        .article-container a {
+            color: var(--gold);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .article-container a:hover {
+            color: var(--dark-olive);
+        }
+
+        .callout {
+            background: var(--sage-light);
+            border-left: 3px solid var(--sage);
+            padding: 24px 28px;
+            margin: 32px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .callout p {
+            margin-bottom: 0;
+            font-size: 16px;
+            color: var(--text-primary);
+        }
+
+        .callout p + p {
+            margin-top: 12px;
+        }
+
+        .reg-card {
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            padding: 28px 32px;
+            margin: 28px 0;
+            background: var(--warm-white);
+        }
+
+        .reg-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .reg-card h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--dark-olive);
+        }
+
+        .reg-card .status {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            padding: 4px 10px;
+            border-radius: 3px;
+        }
+
+        .status-active {
+            background: #E8F0E9;
+            color: #3A6B3E;
+        }
+
+        .status-pending {
+            background: #FFF3E0;
+            color: #8B6914;
+        }
+
+        .status-stalled {
+            background: #F0ECEC;
+            color: #7A6B6B;
+        }
+
+        .reg-card p {
+            font-size: 15.5px;
+            margin-bottom: 12px;
+        }
+
+        .reg-card .reg-detail {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+
+        .reg-card .reg-detail strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .timeline-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            font-size: 15px;
+        }
+
+        .timeline-table th {
+            font-weight: 600;
+            text-align: left;
+            padding: 12px 16px;
+            border-bottom: 2px solid var(--dark-olive);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+        }
+
+        .timeline-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-light);
+            vertical-align: top;
+        }
+
+        .timeline-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .year-highlight {
+            font-weight: 600;
+            color: var(--gold);
+        }
+
+        .intro {
+            font-size: 19px;
+            line-height: 1.75;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+        }
+
+        .article-cta {
+            background: var(--cream);
+            border-radius: 6px;
+            padding: 40px 36px;
+            margin: 56px 0 0;
+            text-align: center;
+        }
+
+        .article-cta h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--dark-olive);
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .article-cta p {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--warm-white);
+            background: var(--dark-olive);
+            padding: 14px 32px;
+            border-radius: 4px;
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            transition: background 0.2s;
+        }
+
+        .cta-button:hover {
+            background: #3D4E3F;
+            color: var(--warm-white);
+        }
+
+        footer {
+            border-top: 1px solid var(--border-light);
+            padding: 40px 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark-olive);
+            text-decoration: none;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .footer-links a:hover {
+            color: var(--dark-olive);
+        }
+
+        @media (max-width: 768px) {
+            nav { padding: 20px 24px; }
+            .nav-links { display: none; }
+            .hero { padding: 56px 24px 48px; }
+            .hero h1 { font-size: 30px; }
+            .article-container { padding: 40px 24px 60px; }
+            .article-container h2 { font-size: 24px; }
+            .reg-card { padding: 20px 24px; }
+            .timeline-table { font-size: 14px; }
+            .timeline-table th, .timeline-table td { padding: 10px 10px; }
+            footer { flex-direction: column; gap: 16px; text-align: center; padding: 32px 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="https://woodlaneadvisory.com" class="nav-logo">Woodlane Advisory</a>
+        <ul class="nav-links">
+            <li><a href="https://woodlaneadvisory.com/#services">Services</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="https://woodlaneadvisory.com/#about">About</a></li>
+            <li><a href="https://woodlaneadvisory.com/#contact">Get in Touch</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-breadcrumb">
+                <a href="https://woodlaneadvisory.com">Home</a> &nbsp;/&nbsp; <a href="/resources">Resources</a> &nbsp;/&nbsp; Roadmaps
+            </div>
+            <h1>What Does a Realistic 3-Year Sustainability Roadmap Look Like for a Scaling Fashion Brand?</h1>
+            <div class="hero-meta">
+                <span>Woodlane Advisory</span>
+                <span>Updated March 2026</span>
+                <span>16 min read</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARTICLE -->
+    <article class="article-container">
+
+        <p class="intro">
+            Building a sustainability programme from scratch while running a growing fashion business is genuinely hard. The regulatory landscape is moving fast, the data requirements are substantial, and the internal resources to manage it all are usually thin. This guide provides a sequenced, three-year framework designed for mid-market fashion brands that need to build sustainability infrastructure methodically, without overwhelming their teams or their budgets.
+        </p>
+
+        <p>
+            The distinction between a strategy and a roadmap matters here. A strategy says what you believe and why. A roadmap says what you are going to do, in what order, by when, and what resources it will take. This is the operational blueprint.
+        </p>
+
+        <p>
+            Sequencing is critical. There is a natural temptation to tackle everything at once, especially when regulatory deadlines and partner requests are coming from multiple directions. But sustainability programmes that try to move on all fronts simultaneously tend to spread resources too thin and deliver on nothing fully. A phased approach builds capability, generates early wins that fund later work, and creates a compounding effect where each phase makes the next one more manageable.
+        </p>
+
+        <div class="callout">
+            <p>
+                <strong>Prerequisites:</strong> This roadmap assumes you have completed (or are completing) a <a href="/resources/baseline-sustainability-audit">baseline sustainability audit</a>. If you have not started one yet, that is the place to begin. A roadmap without a baseline is a plan built on assumptions. You will also need executive sponsorship. Sustainability work that sits in one function without leadership backing will inevitably stall when it requires cross-functional coordination.
+            </p>
+        </div>
+
+        <!-- ═══════════════════════════════════════ -->
+        <h2>Year One: Foundations and Compliance</h2>
+
+        <p>
+            Year one is about establishing the factual foundation: what do you know, what can you prove, and what are your near-term compliance obligations? This is not the year for ambitious public commitments. This is the year for building the evidence base that makes credible commitments possible later.
+        </p>
+
+        <h3>Quarter 1: Claims audit and regulatory mapping</h3>
+
+        <div class="reg-card">
+            <div class="reg-card-header">
+                <h4>Audit and revise all environmental claims</h4>
+                <span class="status status-active">Urgent / Q1</span>
+            </div>
+            <p>
+                This is the most time-sensitive action for any brand selling in the EU. Conduct a complete inventory of every environmental claim in your external communications: website, product descriptions, hangtags, packaging, social media, press materials, wholesale line sheets, and investor decks. For each claim, document the supporting evidence. Any claim that cannot be substantiated with specific, verifiable data should be revised or removed before September 2026, when EU Green Transition Directive (ECGT) enforcement begins.
+            </p>
+            <p class="reg-detail"><strong>Focus areas:</strong> Use of "sustainable," "eco-friendly," "green," "conscious," or "responsible" without qualification. Any "carbon neutral" or "climate positive" claims based on carbon offsets (prohibited under the ECGT). Sustainability labels not backed by a recognised certification scheme.</p>
+            <p class="reg-detail"><strong>Resource requirement:</strong> 40 to 80 hours of internal time across marketing, product, and legal. May require an external legal review of revised claims if you sell in the EU.</p>
+            <p>
+                For detailed guidance on the ECGT and the broader regulatory landscape, see our <a href="/resources/csrd-fashion-brands">guide to EU and US sustainability regulations</a>. For the framework on building defensible communications, see our <a href="/resources/greenwashing-claims-strategy">greenwashing and claims strategy guide</a>.
+            </p>
+        </div>
+
+        <div class="reg-card">
+            <div class="reg-card-header">
+                <h4>Map your regulatory exposure</h4>
+                <span class="status status-active">Urgent / Q1</span>
+            </div>
+            <p>
+                Produce a documented assessment of which sustainability regulations apply to your brand, based on where you sell, where you source, what materials you use, and how large your company is. At a minimum, assess your exposure to CSRD, EUDR, ECGT, ESPR, EU Textile EPR, California SB 707, and the FTC Green Guides. The point is not to create alarm. It is to create clarity about which obligations are yours and which are not.
+            </p>
+            <p class="reg-detail"><strong>Output:</strong> A one-page regulatory exposure matrix showing each regulation, whether it applies to you (directly or indirectly through wholesale partners), the key compliance deadline, and your current readiness status.</p>
+        </div>
+
+        <h3>Quarter 2: Supply chain mapping and data infrastructure</h3>
+
+        <div class="reg-card">
+            <div class="reg-card-header">
+                <h4>Build your Tier 1 and Tier 2 supplier map</h4>
+                <span class="status status-active">Foundation / Q2</span>
+            </div>
+            <p>
+                Document every Tier 1 supplier (finished goods factories) with name, address, country, primary product categories, and audit status. Begin mapping Tier 2 suppliers (fabric mills, tanneries, component manufacturers) for your top five materials by volume. For brands selling leather products in the EU, Tier 2 traceability to raw material origin is required by December 2026 under the EUDR.
+            </p>
+            <p>
+                This mapping often surfaces valuable information beyond compliance. Understanding where your materials actually come from tends to reveal consolidation opportunities, quality risks, and sourcing dependencies that are useful to the broader business. For a detailed look at what this process uncovers, see our <a href="/resources/supply-chain-risks">supply chain sustainability risks guide</a>.
+            </p>
+            <p class="reg-detail"><strong>Resource requirement:</strong> Primarily a sourcing team effort. Expect 60 to 120 hours depending on the complexity of your supplier base.</p>
+        </div>
+
+        <div class="reg-card">
+            <div class="reg-card-header">
+                <h4>Establish your materials profile</h4>
+                <span class="status status-active">Foundation / Q2</span>
+            </div>
+            <p>
+                Document your full material mix by fibre type, weight, certification status, and source country. Calculate your certified material percentage (by weight) as a baseline metric. Identify your blended-fibre exposure, since blend ratios will determine future EPR costs and recyclability.
+            </p>
+            <p class="reg-detail"><strong>Output:</strong> A materials database (a spreadsheet works well at this stage) that serves as the foundation for your <a href="/resources/sustainable-materials-transition">materials transition planning</a> and regulatory compliance documentation.</p>
+        </div>
+
+        <h3>Quarters 3 and 4: Emissions baseline and early transitions</h3>
+
+        <div class="reg-card">
+            <div class="reg-card-header">
+                <h4>Calculate your initial emissions baseline</h4>
+                <span class="status status-active">Foundation / Q3</span>
+            </div>
+            <p>
+                Produce a Scope 1, 2, and 3 greenhouse gas inventory. Scope 1 and 2 can be calculated from utility bills and fuel records. Scope 3 will likely require spend-based estimates using industry emission factors for the first year. That is a perfectly acceptable starting point. The important thing is to document the methodology clearly so you can improve data quality over time and measure progress consistently.
+            </p>
+            <p>
+                For guidance on which emissions metrics to prioritise and how to present them to different audiences, see our <a href="/resources/sustainability-metrics-fashion">sustainability metrics guide</a>.
+            </p>
+            <p class="reg-detail"><strong>Resource requirement:</strong> If done internally using the GHG Protocol methodology and publicly available emission factors, this takes 40 to 80 hours. An external consultant can accelerate this but will cost $15,000 to $30,000 for a mid-market brand.</p>
+        </div>
+
+        <div class="reg-card">
+            <div class="reg-card-header">
+                <h4>Execute cost-neutral material swaps</h4>
+                <span class="status status-active">Quick Win / Q3-Q4</span>
+            </div>
+            <p>
+                There are material transitions that carry little or no cost premium and can be completed within one to two seasons without changing product specifications or supplier relationships. The most straightforward is switching virgin polyester to GRS-certified recycled polyester. Packaging transitions (recycled-content poly bags, FSC-certified tissue and boxes) are similarly accessible.
+            </p>
+            <p>
+                These are good early moves because they build internal familiarity with certified material sourcing, create visible progress, and demonstrate to partners and investors that the programme is producing tangible changes. For the full framework on phasing material transitions, see our <a href="/resources/sustainable-materials-transition">sustainable materials transition guide</a>.
+            </p>
+        </div>
+
+        <div class="reg-card">
+            <div class="reg-card-header">
+                <h4>Join the California PRO (if applicable)</h4>
+                <span class="status status-active">Compliance / By July 2026</span>
+            </div>
+            <p>
+                If your brand sells apparel in California and has more than $1 million in annual global revenue, you are required to join the state-approved Producer Responsibility Organisation (Landbell USA) by July 1, 2026.
+            </p>
+        </div>
+
+        <div class="callout">
+            <p>
+                <strong>Year one success looks like:</strong> All environmental claims are substantiated or revised. You have a complete Tier 1 supplier map and partial Tier 2 visibility. You know your material mix and certified material percentage. You have an initial emissions baseline. You have completed the cost-neutral material swaps. You are compliant with all 2026 regulatory deadlines. You have not yet made public sustainability commitments, because you now have the evidence base to make credible ones.
+            </p>
+        </div>
+
+        <!-- ═══════════════════════════════════════ -->
+        <h2>Year Two: Strategy and Integration</h2>
+
+        <p>
+            Year two is where the work shifts from reactive compliance to deliberate strategy. The data and visibility from year one provide the foundation. Now you set targets, begin the more substantive material transitions, and start integrating sustainability into the commercial and operational processes that run your business day to day.
+        </p>
+
+        <h3>Quarter 1: Strategy development and target setting</h3>
+
+        <p>
+            Using your baseline data, develop a formal sustainability strategy. This should cover your material issues (identified through the baseline audit), your targets for each core KPI, your investment priorities, and your governance structure: who owns sustainability, how progress is reviewed, and how it connects to commercial objectives.
+        </p>
+
+        <p>
+            Set targets that are specific, time-bound, and achievable. For emissions, consider whether science-based targets (SBTi) are appropriate for your brand's size and ambition. For materials, set a certified material percentage target for the end of year three. For supply chain visibility, set a Tier 2 coverage target. The right targets are ambitious enough to demonstrate meaningful progress but realistic enough that your team can deliver them. A target you hit is always more valuable than an aspirational one you miss.
+        </p>
+
+        <p>
+            This is also the point where you decide whether to pursue any formal external commitments or frameworks. Consider these carefully. A missed commitment is worse than no commitment at all, so be honest about what your organisation can deliver within the timeframe.
+        </p>
+
+        <h3>Quarters 2 and 3: Material transitions and supplier development</h3>
+
+        <p>
+            Begin Phase 2 of your <a href="/resources/sustainable-materials-transition">materials transition</a>: converting your three to five highest-volume fabrics to certified alternatives. This typically means organic cotton for cotton-heavy categories, TENCEL or lyocell where viscose or rayon is currently used, and recycled cotton blends where applicable.
+        </p>
+
+        <p>
+            Start with your existing suppliers wherever possible. Many mills now offer certified alternatives alongside their conventional range, which means you can transition without disrupting established relationships. Work with your strategic suppliers to develop their certification capability. If your primary cotton jersey supplier does not hold GOTS certification, discuss a realistic timeline for them to obtain it.
+        </p>
+
+        <p>
+            Begin collecting primary emissions data from your top five suppliers by production volume. Even starting with annual energy consumption and fuel use data represents a meaningful upgrade from spend-based estimates and will improve the accuracy of your Scope 3 inventory going forward.
+        </p>
+
+        <h3>Quarter 4: Reporting and commercial integration</h3>
+
+        <p>
+            Produce your first sustainability report. For a mid-market brand, this does not need to be a standalone publication. A dedicated section of your annual report or a concise digital report (10 to 15 pages) is appropriate. Include your material issues, core KPIs with year-one baselines and year-two performance, your strategy and targets, and an honest assessment of progress and challenges. The honesty matters. Investors and partners respond well to transparency about what you are working on, not just what you have achieved.
+        </p>
+
+        <p>
+            Integrate sustainability into your commercial processes. This means including sustainability credentials in your wholesale pitch materials, adding sustainability performance to your supplier scorecards, and ensuring your marketing team has the data and language to communicate progress accurately. For guidance on communicating without greenwashing risk, see our <a href="/resources/greenwashing-claims-strategy">claims strategy guide</a>.
+        </p>
+
+        <p>
+            If you are preparing for a funding round, exit, or strategic acquisition, this is when you should build your investor-facing sustainability summary. For the metrics investors want to see, see our <a href="/resources/sustainability-metrics-fashion">sustainability metrics guide</a>.
+        </p>
+
+        <div class="callout">
+            <p>
+                <strong>Year two success looks like:</strong> You have a documented sustainability strategy with specific targets. Your certified material percentage has increased meaningfully. You are collecting primary emissions data from key suppliers. You have produced your first sustainability report. Sustainability considerations are part of your commercial and sourcing processes, not a separate workstream.
+            </p>
+        </div>
+
+        <!-- ═══════════════════════════════════════ -->
+        <h2>Year Three: Scale, Demonstrate, and Prepare</h2>
+
+        <p>
+            Year three is about extending what you have built, demonstrating progress with credible data, and preparing for the next wave of regulatory requirements. By this point, your sustainability programme should be generating measurable results you can communicate externally with confidence.
+        </p>
+
+        <h3>Scale material transitions across the full range</h3>
+
+        <p>
+            Extend certified material usage beyond your core fabrics to your broader product range. Address the more complex categories: leather traceability, specialty trims, blended fabrics. Evaluate emerging materials (regenerative cotton, next-generation cellulosics, bio-based alternatives) for capsule collections or limited introductions where the supply chain and pricing are viable.
+        </p>
+
+        <p>
+            A realistic target for a mid-market brand at the end of year three is 50% to 70% certified material by weight, depending on product mix complexity. That is a substantial shift from a near-zero starting point and a story with genuine credibility behind it.
+        </p>
+
+        <h3>Deepen supply chain engagement</h3>
+
+        <p>
+            Extend Tier 2 visibility to cover the majority of your production volume. Begin engaging with Tier 3 (raw material processors) for your highest-risk materials. Implement a formalised supplier sustainability scorecard that tracks environmental and social performance alongside quality, price, and delivery.
+        </p>
+
+        <p>
+            For brands with high-volume strategic suppliers in emissions-intensive manufacturing regions, this is the stage where co-investment in energy efficiency or renewable energy at supplier facilities becomes worth exploring. These projects are still relatively uncommon in the mid-market, but they represent the direction of travel for brands and PE-backed portfolios that are serious about Scope 3 reduction.
+        </p>
+
+        <h3>Prepare for 2028 and 2029 regulatory requirements</h3>
+
+        <p>
+            The next wave of compliance obligations arrives in 2028 and 2029. EU Textile EPR schemes become operational across all member states by approximately mid-2028, with eco-modulated producer fees. CSRD reporting extends to non-EU companies with significant EU revenue from FY2027 (reported in 2028) and FY2028 (reported in 2029). The ESPR's Digital Product Passport requirements for textiles are expected to take shape in this timeframe.
+        </p>
+
+        <p>
+            Year three is when you ensure your data infrastructure, material composition documentation, and supplier data collection processes are robust enough to meet these requirements smoothly. The work you have done in years one and two makes this manageable. Without that foundation, these deadlines become significantly more expensive and disruptive to meet.
+        </p>
+
+        <h3>Publish a credible progress report</h3>
+
+        <p>
+            By the end of year three, you should be able to publish a sustainability report with three years of trend data showing where you started, what you have achieved, and where you are heading. This becomes a valuable commercial asset for wholesale partner negotiations, investor conversations, and consumer trust.
+        </p>
+
+        <div class="callout">
+            <p>
+                <strong>Year three success looks like:</strong> Certified materials represent the majority of your product range. You have three years of emissions data showing a downward trend. Your supply chain visibility extends meaningfully beyond Tier 1. You have a published track record that investors, partners, and regulators can review. You are prepared for the 2028-2029 regulatory wave. Sustainability is part of how you run your supply chain and communicate your brand, not a separate initiative.
+            </p>
+        </div>
+
+        <!-- ═══════════════════════════════════════ -->
+        <h2>The Roadmap at a Glance</h2>
+
+        <table class="timeline-table">
+            <thead>
+                <tr>
+                    <th>Timeline</th>
+                    <th>Focus Area</th>
+                    <th>Key Deliverables</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="year-highlight">Y1 Q1</td>
+                    <td>Claims and compliance</td>
+                    <td>Claims audit complete. Regulatory exposure matrix documented. Non-compliant claims revised or removed.</td>
+                </tr>
+                <tr>
+                    <td class="year-highlight">Y1 Q2</td>
+                    <td>Data foundations</td>
+                    <td>Tier 1 supplier map complete. Tier 2 mapping initiated for top materials. Materials profile documented.</td>
+                </tr>
+                <tr>
+                    <td class="year-highlight">Y1 Q3-Q4</td>
+                    <td>Baseline and early wins</td>
+                    <td>Initial GHG inventory. Recycled polyester and packaging swaps executed. California PRO membership (if applicable).</td>
+                </tr>
+                <tr>
+                    <td class="year-highlight">Y2 Q1</td>
+                    <td>Strategy</td>
+                    <td>Formal sustainability strategy with targets. KPI framework established. Governance structure defined.</td>
+                </tr>
+                <tr>
+                    <td class="year-highlight">Y2 Q2-Q3</td>
+                    <td>Material transitions</td>
+                    <td>Core fabric transitions to certified alternatives. Primary emissions data collection from top suppliers initiated.</td>
+                </tr>
+                <tr>
+                    <td class="year-highlight">Y2 Q4</td>
+                    <td>Reporting and integration</td>
+                    <td>First sustainability report published. Sustainability integrated into commercial and sourcing processes.</td>
+                </tr>
+                <tr>
+                    <td class="year-highlight">Y3 H1</td>
+                    <td>Scale</td>
+                    <td>Certified materials expanded across full range. Tier 2 visibility at majority coverage. Supplier scorecards operational.</td>
+                </tr>
+                <tr>
+                    <td class="year-highlight">Y3 H2</td>
+                    <td>Demonstrate and prepare</td>
+                    <td>Three-year progress report published. Data infrastructure ready for 2028-2029 regulatory requirements.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- ═══════════════════════════════════════ -->
+        <h2>What This Costs</h2>
+
+        <p>
+            The honest answer depends on your starting point, your product complexity, and whether you build capability internally or bring in external support. Here are realistic ranges for a fashion brand doing $10 million to $100 million in revenue.
+        </p>
+
+        <p>
+            <strong>Year one:</strong> $30,000 to $80,000 in direct costs (consultant time for baseline audit and emissions calculation, legal review of claims, PRO membership fees). Plus 0.25 to 0.5 FTE of internal time across sourcing, marketing, and operations.
+        </p>
+
+        <p>
+            <strong>Year two:</strong> $50,000 to $150,000 in direct costs (strategy development if using external support, material cost premiums for initial transitions, reporting costs, potential SBTi commitment fee). Plus 0.5 to 1.0 FTE of internal time. At this stage, the workload may justify a dedicated sustainability hire or a fractional sustainability lead. For guidance on that decision, see our <a href="/resources/sustainability-consultant-fashion">guide to hiring a sustainability consultant</a>.
+        </p>
+
+        <p>
+            <strong>Year three:</strong> $75,000 to $200,000 in direct costs (scaled material premiums, supplier development, expanded reporting, potential technology investment for data management). Plus 1.0 FTE of internal sustainability capacity.
+        </p>
+
+        <p>
+            These are investments, not sunk costs. Material transitions often yield operational savings. Supply chain visibility reduces risk and improves efficiency. Regulatory compliance avoids fines. And documented sustainability performance strengthens your position with wholesale partners, investors, and consumers. For a deeper analysis of how this investment connects to valuation, see our <a href="/resources/sustainability-brand-valuation">guide to sustainability and brand valuation</a>.
+        </p>
+
+        <!-- ═══════════════════════════════════════ -->
+        <h2>Why the Sequencing Matters More Than the Speed</h2>
+
+        <p>
+            Three years is not a long time when you consider the scope of what needs to be built. But the brands that start now and move methodically will be in a fundamentally different position by 2029 than those that wait. Not because they moved faster, but because they built each phase on top of a solid foundation.
+        </p>
+
+        <p>
+            The regulatory calendar is fixed. The ECGT enforces in September 2026. The EUDR enforces in December 2026. EU Textile EPR schemes go live by mid-2028. CSRD extends to non-EU multinationals in 2029. These dates are not moving. The only variable is how prepared you are when they arrive.
+        </p>
+
+        <p>
+            A three-year roadmap is not a commitment to perfection. It is a commitment to documented, measurable progress. That is what regulators require, what investors reward, and what builds the kind of credibility that cannot be manufactured overnight.
+        </p>
+
+        <!-- CTA -->
+        <div class="article-cta">
+            <h3>Need help building your roadmap?</h3>
+            <p>
+                Woodlane Advisory helps fashion brands develop practical, sequenced sustainability roadmaps tailored to their supply chain, markets, and growth stage. Start with a conversation.
+            </p>
+            <a href="mailto:julia@woodlaneadvisory.com" class="cta-button">Book a Call</a>
+        </div>
+
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="https://woodlaneadvisory.com" class="footer-logo">Woodlane Advisory</a>
+        <ul class="footer-links">
+            <li><a href="https://woodlaneadvisory.com/#services">Services</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="https://woodlaneadvisory.com/#about">About</a></li>
+            <li><a href="https://www.linkedin.com/company/woodlane-advisory" target="_blank">LinkedIn</a></li>
+        </ul>
+        <span>&copy; 2026 woodlaneadvisory.com</span>
+    </footer>
+
+</body>
+</html>
